@@ -1,3 +1,33 @@
 /* You can add global styles to this file, and also import other style files */
 
+@import url('https://fonts.googleapis.com/css2?family=Elms+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 @import 'tailwindcss';
+
+@theme {
+  --font-sans: 'Elms Sans', 'sans-serif';
+}
+
+@layer base {
+  html,
+  body {
+    @apply min-h-full;
+  }
+  h1 {
+    @apply text-4xl font-bold;
+  }
+  h2 {
+    @apply text-3xl font-bold;
+  }
+  h3 {
+    @apply text-2xl font-bold;
+  }
+  h4 {
+    @apply text-xl font-bold;
+  }
+  h5 {
+    @apply font-bold;
+  }
+  h6 {
+    @apply font-semibold;
+  }
+}
