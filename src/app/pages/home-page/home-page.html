@@ -1,51 +1,35 @@
 <div class="flex flex-col gap-10">
   <header class="flex flex-col gap-6 text-center">
     <div class="flex flex-col gap-2">
-      <h1 class="text-teal-400">Alexandra Fontner</h1>
-      <h3>Developer & Digital Artist</h3>
+      <h1 class="text-teal-400">{{ 'app.home.heading' | translate }}</h1>
+      <h3>{{ 'app.home.subheading' | translate }}</h3>
     </div>
 
     <div class="flex flex-col gap-4">
-      <p>
-        Welcome to my page! Here you can get to know someone who loves expressing their human
-        creativity through the means of digital technologies. I have interests in various fields,
-        such as different types of software development (games, web, mobile) as well as art and
-        animation in both 2D and 3D. Below you can view some of my projects and find more
-        information about me and my skillset.
-      </p>
-      <p>
-        If you want to get in touch regarding work opportunities or have any questions about my
-        projects, do not hesitate to reach out to me via email or LinkedIn:
-      </p>
+      <p [innerHTML]="'app.home.intro.p1' | translate"></p>
+      <p [innerHTML]="'app.home.intro.p2' | translate"></p>
     </div>
   </header>
 
   <section class="flex flex-col gap-6">
-    <h2 class="text-teal-400">Projects</h2>
+    <h2 class="text-teal-400">{{ 'app.home.projectsHeading' | translate }}</h2>
 
     <div class="flex flex-col gap-4">
-      <p>
-        Here I want to present some of the projects created or contributed to, to show what kind of
-        work I am capable of and also enjoy doing. Hopefully more will be added over time as I
-        continue learning.
-      </p>
-      <p>
-        To gain a more in-depth look on some of them, you are also welcome to take a look at my
-        profiles on ArtStation or GitHub:
-      </p>
+      <p [innerHTML]="'app.home.projectsTexts.p1' | translate"></p>
+      <p [innerHTML]="'app.home.projectsTexts.p2' | translate"></p>
     </div>
 
     <div>
-      <h3 class="text-teal-300">University</h3>
+      <h3 class="text-teal-300">{{ 'app.home.universityHeading' | translate }}</h3>
     </div>
 
     <div>
-      <h3 class="text-teal-300">Personal</h3>
+      <h3 class="text-teal-300">{{ 'app.home.personalHeading' | translate }}</h3>
     </div>
   </section>
 
   <section class="flex flex-col gap-6">
-    <h2 class="text-teal-400">About me</h2>
+    <h2 class="text-teal-400">{{ 'app.home.aboutHeading' | translate }}</h2>
 
     <div class="lg:gap:8 flex flex-col items-center gap-6 lg:flex-row-reverse lg:justify-between">
       <img
@@ -55,38 +39,24 @@
       />
 
       <div class="flex flex-col gap-4 lg:max-w-2/3">
-        <p>
-          I have always had a wide range of interests and enjoyed learning new things and expressing
-          myself creatively. When I was a teenager and had to start thinking about what I wanted to
-          do after school, I decided that I would like to work on computer games, either as an
-          artist or developer. I have always enjoyed playing them (with some of my favourites
-          nowadays being the two <i>Kingdom Come: Deliverance</i> games, <i>Medieval Dynasty</i>,
-          and <i>Stellaris</i>, among many others), and the thought of contributing to the creation
-          of future games was very exciting to me.
-        </p>
-        <p>
-          After school I applied for the bachelor programme Creative Computing, where got to know
-          various other use cases for programming besides games, and discovered that for example web
-          applications and mobile apps can be super fun to develop as well. By now I have about two
-          years of professional experience as a front-end web developer, and I would be very happy
-          to both deepen my knowledge in this area, as well as expand my skills into other fields.
-        </p>
-        <p>
-          I want to be open about the fact that I do not use generative AI tools for any of my
-          creative work (writing, illustration, 3D art, sound etc.). For one thing, this is because
-          I am aware that a lot of AI models were trained on artists' work without their consent or
-          any kind of compensation. Plus, I just enjoy the process of creation so much, and it would
-          be quite stupid of me to outsource precisely the fun work to AI, wouldn't you agree?
-        </p>
+        <p [innerHTML]="'app.home.biography.p1' | translate"></p>
+        <p [innerHTML]="'app.home.biography.p2' | translate"></p>
+        <p [innerHTML]="'app.home.biography.p3' | translate"></p>
       </div>
     </div>
 
-    <div>
-      <h3 class="text-teal-300">Professional Experience</h3>
+    <div class="flex flex-col gap-5 lg:max-w-2/3">
+      <h3 class="text-teal-300">{{ 'app.home.jobHeading' | translate }}</h3>
+      @for (job of jobs(); track $index) {
+        <app-experience-card [experience]="job"></app-experience-card>
+      }
     </div>
 
-    <div>
-      <h3 class="text-teal-300">Education</h3>
+    <div class="flex flex-col gap-5 lg:max-w-2/3">
+      <h3 class="text-teal-300">{{ 'app.home.educationHeading' | translate }}</h3>
+      @for (education of educations(); track $index) {
+        <app-experience-card [experience]="education"></app-experience-card>
+      }
     </div>
   </section>
 </div>

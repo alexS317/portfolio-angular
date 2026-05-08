@@ -1,0 +1,18 @@
+<div class="flex flex-col gap-3 rounded-md bg-slate-700 p-4">
+  <div class="flex flex-col gap-1">
+    <p class="font-medium">{{ experience().timeframe }}</p>
+    <h5 class="text-teal-200">{{ experience().title }}</h5>
+    <p class="font-semibold">{{ experience().company }}</p>
+  </div>
+
+  @if (experience().tasks) {
+    <div>
+      <p>{{ 'app.home.experienceTasks' | translate }}:</p>
+      <ul class="ml-8 list-disc">
+        @for (task of experience().tasks; track $index) {
+          <li [innerHTML]="task"></li>
+        }
+      </ul>
+    </div>
+  }
+</div>
