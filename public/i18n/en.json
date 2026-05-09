@@ -24,11 +24,11 @@
       "biography": {
         "p1": "I have always had a wide range of interests and enjoyed learning new things and expressing myself creatively. When I was a teenager and had to start thinking about what I wanted to do after school, I decided that I would like to work on computer games, either as an artist or developer. I have always enjoyed playing them (with some of my favourites nowadays being the two <i>Kingdom Come: Deliverance</i> games, <i>Medieval Dynasty</i>, and <i>Stellaris</i>, among many others), and the thought of contributing to the creation of future games was very exciting to me.",
         "p2": "After school I applied for the bachelor programme Creative Computing, where got to know various other use cases for programming besides games, and discovered that for example web applications and mobile apps can be super fun to develop as well. By now I have about two years of professional experience as a front-end web developer, and I would be very happy to both deepen my knowledge in this area, as well as expand my skills into other fields.",
-        "p3": "I want to be open about the fact that I do not use generative AI tools for any of my creative work (writing, illustration, 3D art, sound etc.). For one thing, this is because I am aware that a lot of AI models were trained on the works of many artists without their consent or any kind of compensation. Plus, I just enjoy the process of creation a lot, and it would be quite stupid of me to outsource precisely the fun work to AI, wouldn't you agree?"
+        "p3": "I want to be open about the fact that I do not use generative AI tools for any of my creative work (writing, illustration, 3D art, sound etc.). I simply enjoy the process of creation a lot, and it would be quite stupid of me to outsource precisely the fun work to AI, wouldn't you agree?"
       },
       "experienceTasks": "Tasks",
       "jobHeading": "Professional Experience",
-      "jobList": [
+      "jobsList": [
         {
           "timeframe": "Aug. 2024 - Mar. 2026",
           "title": "Junior Developer",
@@ -48,7 +48,7 @@
         }
       ],
       "educationHeading": "Education",
-      "educationList": [
+      "educationsList": [
         {
           "timeframe": "Sept. 2024 - Oct. 2026",
           "title": "Digital Media Production (Dipl.-Ing.)",
@@ -60,7 +60,7 @@
           "company": "University of Applied Sciences St. Pölten"
         }
       ],
-      "skillSections": [
+      "skillSectionsList": [
         {
           "title": "Knowledge and Skills",
           "description": "Sorted based on what I have spent the most time with and feel most experienced in.",
@@ -105,7 +105,7 @@
                 "Clip Studio Paint",
                 "Blender",
                 "Figma",
-                "Adobe CC (After Effects, Premiere Pro, Photoshop, Substance Painter",
+                "Adobe CC (After Effects, Premiere Pro, Photoshop, Substance Painter)",
                 "Autodesk Maya",
                 "Spine 2D"
               ]
@@ -136,6 +136,159 @@
       "builtWith": "Website built with Angular & Tailwind. Designed with Figma.",
       "credits": "The pictures, images and graphics on this website are protected by copyright. All texts are copyrighted. <b>Image rights belong to:</b> Alexandra Fontner",
       "aiConsent": "The creator of the website does not consent to any of its contents being used for the training of generative AI tools."
+    },
+    "project": {
+      "projectsList": [
+        {
+          "id": "comfort-zone-remake",
+          "title": "ComfortZone [Remake]",
+          "studyProgramme": "",
+          "semester": "",
+          "images": [""],
+          "tools": ["Flutter"],
+          "description": "",
+          "link": {
+            "text": "",
+            "url": ""
+          }
+        },
+        {
+          "id": "dream-diary",
+          "title": "DreamDiary [WIP]",
+          "studyProgramme": "",
+          "semester": "",
+          "images": [""],
+          "tools": ["Flutter"],
+          "description": "",
+          "link": {
+            "text": "",
+            "url": ""
+          }
+        },
+        {
+          "id": "music-player",
+          "title": "Music Player [WIP]",
+          "studyProgramme": "",
+          "semester": "",
+          "images": [""],
+          "tools": ["Flutter"],
+          "description": "",
+          "link": {
+            "text": "",
+            "url": ""
+          }
+        },
+        {
+          "id": "cosmic-purrsuit",
+          "title": "Cosmic Purrsuit",
+          "studyProgramme": "Digital Media Production",
+          "semester": "3",
+          "images": [""],
+          "tools": [
+            "Autodesk Maya",
+            "Substance Painter",
+            "Blender",
+            "After Effects",
+            "Premiere Pro"
+          ],
+          "description": "",
+          "link": {
+            "text": "",
+            "url": ""
+          }
+        },
+        {
+          "id": "chibi-sushi",
+          "title": "Chibi Sushi",
+          "studyProgramme": "Digital Media Production",
+          "semester": "3",
+          "images": [""],
+          "tools": ["Autodesk Maya", "Substance Painter", "After Effects"],
+          "description": "",
+          "link": {
+            "text": "",
+            "url": ""
+          }
+        },
+        {
+          "id": "swampify",
+          "title": "Swampify",
+          "studyProgramme": "Creative Computing",
+          "semester": "6",
+          "images": ["swampify-1.png"],
+          "tools": ["Unity", "Blender", "Clip Studio Paint"],
+          "description": "This was the biggest project of my bachelor programme, as it was also the final one, created in the last semester which was specifically dedicated to working on one big project. The assignment was to create a serious game, so over the course of about 4 months, five other study colleagues and I created a cozy puzzle game which also teaches players about the restoration of swamp landscapes. <br><br> I was our lead for everything related to the game graphics, and worked on concept art, 3D models and textures. Besides, I also implemented some features in the code as well as VFX - we were a small team with little time so everyone to help on the things that were currently needed. We were really happy with the end result, and when we presented it at our university's project exhibition at the end of the semester it was very well received. Later on it was even featured in the Student Project Showcase on the official Unity Twitch channel.",
+          "link": {
+            "text": "Here you can download it from itch.io and try it out for yourself!",
+            "url": "https://shellrider.itch.io/swampify"
+          }
+        },
+        {
+          "id": "tides-of-fortune",
+          "title": "Tides of Fortune",
+          "studyProgramme": "Creative Computing",
+          "semester": "4",
+          "images": ["tides-of-fortune-1.png"],
+          "tools": ["Unity", "Blender", "Clip Studio Paint"],
+          "description": "This 3D adventure game was done for our fourth Creative Codelab (two week intensive course at the end of the semester) and was done as a group project with three of my study colleagues. I was responsible for creating the main character with all of their features (concept, modelling, texturing, rigging, animating), as well as some other graphical assets, both 2D and 3D, like the treasure chest or the inventory UI. I also implemented some features in the code, like the item collection.",
+          "link": {
+            "text": "Here you can download it from GitHub and try it for yourself!",
+            "url": "https://github.com/alexS317/Tides-of-Fortune/releases/tag/v1.0.0"
+          }
+        },
+        {
+          "id": "the-hunt-for-the-pirate-gold",
+          "title": "The Hunt for the Pirate Gold",
+          "studyProgramme": "Creative Computing",
+          "semester": "4",
+          "images": [""],
+          "tools": ["Unity", "Blender"],
+          "description": "",
+          "link": {
+            "text": "",
+            "url": ""
+          }
+        },
+        {
+          "id": "space-workshop",
+          "title": "Space Workshop",
+          "studyProgramme": "Creative Computing",
+          "semester": "4",
+          "images": [""],
+          "tools": ["Unity", "Spine 2D", "Clip Studio Paint", "After Effects"],
+          "description": "",
+          "link": {
+            "text": "",
+            "url": ""
+          }
+        },
+        {
+          "id": "pirates-memory",
+          "title": "Pirates Memory",
+          "studyProgramme": "Creative Computing",
+          "semester": "3",
+          "images": [""],
+          "tools": ["Nuxt"],
+          "description": "",
+          "link": {
+            "text": "",
+            "url": ""
+          }
+        },
+        {
+          "id": "artify",
+          "title": "Artify",
+          "studyProgramme": "Creative Computing",
+          "semester": "2",
+          "images": [""],
+          "tools": ["Node.js"],
+          "description": "",
+          "link": {
+            "text": "",
+            "url": ""
+          }
+        }
+      ]
     }
   }
 }

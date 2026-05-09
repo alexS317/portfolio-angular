@@ -1,0 +1,37 @@
+<div class="flex flex-col gap-4">
+  <a routerLink="" class="flex flex-row items-center gap-4">
+    <i class="pi pi-arrow-left text-3xl"></i>
+    <p class="text-[20px]">Back to Projects</p>
+  </a>
+  @if (!project()) {
+    <p class="text-center">No project with this URL was found.</p>
+  } @else {
+    <div class="flex flex-row">
+      <div></div>
+      <section class="flex flex-col gap-6">
+        <div class="flex flex-col gap-2">
+          <h1>{{ project()?.title }}</h1>
+          @if (semester()) {
+            <h4>{{ project()?.studyProgramme }} | {{ semester() }} Semester</h4>
+          }
+        </div>
+
+        <div class="flex flex-row gap-3">
+          @for (tool of project()?.tools; track $index) {
+            <app-tool-tag [tool]="tool"></app-tool-tag>
+          }
+        </div>
+
+        <p [innerHTML]="project()?.description"></p>
+
+        <a
+          class="font-semibold text-teal-200"
+          [href]="project()?.link?.url"
+          target="_blank"
+          rel="noopener noreferrer"
+          >{{ project()?.link?.text }}</a
+        >
+      </section>
+    </div>
+  }
+</div>

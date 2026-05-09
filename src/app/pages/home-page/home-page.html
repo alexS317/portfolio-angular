@@ -57,12 +57,22 @@
       ></app-icon-link>
     </div>
 
-    <div>
+    <div class="flex flex-col gap-5">
       <h3 class="text-teal-300">{{ 'app.home.universityHeading' | translate }}</h3>
+      <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        @for (project of universityProjects(); track $index) {
+          <app-project-card [project]="project"></app-project-card>
+        }
+      </div>
     </div>
 
-    <div>
+    <div class="flex flex-col gap-5">
       <h3 class="text-teal-300">{{ 'app.home.personalHeading' | translate }}</h3>
+      <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        @for (project of personalProjects(); track $index) {
+          <app-project-card [project]="project"></app-project-card>
+        }
+      </div>
     </div>
   </section>
 

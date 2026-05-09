@@ -1,7 +1,8 @@
 <a
   class="text-5xl"
   [href]="linkType() === 'mail' ? 'mailto:' + link() : '' + link()"
-  target="_blank"
+  [target]="linkType() === 'link' ? '_blank' : ''"
+  [rel]="linkType() === 'link' ? 'noopener noreferrer' : ''"
 >
   @if (primeIcon()) {
     <i [class]="'pi pi-' + primeIcon()"></i>
