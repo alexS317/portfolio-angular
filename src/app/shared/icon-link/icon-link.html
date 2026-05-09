@@ -1,0 +1,10 @@
+<a
+  class="text-5xl"
+  [href]="linkType() === 'mail' ? 'mailto:' + link() : '' + link()"
+  target="_blank"
+>
+  @if (primeIcon()) {
+    <i [class]="'pi pi-' + primeIcon()"></i>
+  }
+  <ng-content></ng-content>
+</a>

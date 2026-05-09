@@ -5,10 +5,11 @@ import { toSignal } from '@angular/core/rxjs-interop';
 import { Experience } from '../../models/experience.model';
 import { SkillList } from '../../models/skill-list.model';
 import { SkillSection } from './components/skill-section/skill-section';
+import { IconLink } from '../../shared/icon-link/icon-link';
 
 @Component({
   selector: 'app-home-page',
-  imports: [TranslatePipe, ExperienceCard, SkillSection],
+  imports: [TranslatePipe, ExperienceCard, SkillSection, IconLink],
   templateUrl: './home-page.html',
 })
 export class HomePage {
