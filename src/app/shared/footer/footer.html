@@ -1,13 +1,10 @@
-<footer class="mt-8 flex flex-col items-center text-[10px] text-slate-400">
-  <p>Alexandra Fontner</p>
-  <p><b>Email:</b> alexandra.fontner@proton.me</p>
-  <p>Website built with Angular & Tailwind. Designed with Figma.</p>
-  <p>
-    The pictures, images and graphics on this website are protected by copyright. All texts are
-    copyrighted. <b>Image rights belong to:</b> Alexandra Fontner
-  </p>
-  <p>
-    The owner of the website does not consent to any of its contents being used for the training of
-    generative AI tools.
-  </p>
+<footer class="mt-8 flex flex-col items-center text-center text-[10px] text-slate-400">
+  <p>{{ 'app.home.heading' | translate }}</p>
+  <div class="flex flex-row">
+    <p class="font-bold">Email:&nbsp;</p>
+    <a class="underline" [href]="'mailto:' + email()"> {{ 'app.home.links.email' | translate }} </a>
+  </div>
+  <p>{{ 'app.footer.builtWith' | translate }}</p>
+  <p [innerHTML]="'app.footer.credits' | translate"></p>
+  <p>{{ 'app.footer.aiConsent' | translate }}</p>
 </footer>

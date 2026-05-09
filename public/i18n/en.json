@@ -3,6 +3,12 @@
     "home": {
       "heading": "Alexandra Fontner",
       "subheading": "Developer & Digital Artist",
+      "links": {
+        "email": "alexandra.fontner@proton.me",
+        "linkedin": "",
+        "artstation": "",
+        "github": ""
+      },
       "intro": {
         "p1": "Welcome to my page! Here you can get to know someone who loves expressing their human creativity through the means of digital technologies. I have interests in various fields, such as different types of software development (games, web, mobile) as well as art and animation in both 2D and 3D. Below you can view some of my projects and find more information about me and my skillset.",
         "p2": "If you want to get in touch regarding work opportunities or have any questions about my projects, do not hesitate to reach out to me via email or LinkedIn:"
@@ -53,7 +59,83 @@
           "title": "Creative Computing (BSc)",
           "company": "University of Applied Sciences St. Pölten"
         }
+      ],
+      "skillSections": [
+        {
+          "title": "Knowledge and Skills",
+          "description": "Sorted based on what I have spent the most time with and feel most experienced in.",
+          "section": [
+            {
+              "subtitle": "Programming",
+              "list": [
+                "JavaScript/TypeScript, Angular, Vue",
+                "Flutter",
+                "C# (for Unity)",
+                "Kotlin",
+                "PHP"
+              ]
+            },
+            {
+              "subtitle": "Art and Design",
+              "list": ["3D Modelling + Animation", "Digital Illustration", "Responsive UI Design"]
+            },
+            {
+              "subtitle": "Languages",
+              "list": ["German (native)", "English (C1)", "Latin"]
+            }
+          ]
+        },
+        {
+          "title": "Software and Tools",
+          "description": "Sorted based on what I use most frequently and therefore feel most confident working with.",
+          "section": [
+            {
+              "subtitle": "Programming",
+              "list": [
+                "Visual Studio Code",
+                "Unity",
+                "Android Studio",
+                "Google Web Designer",
+                "JetBrains (Rider, WebStorm)"
+              ]
+            },
+            {
+              "subtitle": "Art and Design",
+              "list": [
+                "Clip Studio Paint",
+                "Blender",
+                "Figma",
+                "Adobe CC (After Effects, Premiere Pro, Photoshop, Substance Painter",
+                "Autodesk Maya",
+                "Spine 2D"
+              ]
+            },
+            {
+              "subtitle": "Other",
+              "list": ["MS Office", "Jira"]
+            }
+          ]
+        },
+        {
+          "title": "For the Future ...",
+          "description": "I love learning new skills, so here is just a small selection of what I would like to try out in the future:",
+          "section": [
+            {
+              "list": [
+                "Unreal Engine & C++",
+                "ZBrush",
+                "Python",
+                "And of course deepening my knowledge in all those things that I am already familiar with :)"
+              ]
+            }
+          ]
+        }
       ]
+    },
+    "footer": {
+      "builtWith": "Website built with Angular & Tailwind. Designed with Figma.",
+      "credits": "The pictures, images and graphics on this website are protected by copyright. All texts are copyrighted. <b>Image rights belong to:</b> Alexandra Fontner",
+      "aiConsent": "The creator of the website does not consent to any of its contents being used for the training of generative AI tools."
     }
   }
 }
