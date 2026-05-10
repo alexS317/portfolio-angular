@@ -138,13 +138,15 @@
       "aiConsent": "The creator of the website does not consent to any of its contents being used for the training of generative AI tools."
     },
     "project": {
+      "backButton": "Back to projects",
+      "noProjectFound": "No project was found under this URL.",
       "projectsList": [
         {
           "id": "comfort-zone-remake",
           "title": "ComfortZone [Remake]",
           "studyProgramme": "",
           "semester": "",
-          "images": [""],
+          "media": [""],
           "tools": ["Flutter"],
           "description": "",
           "link": {
@@ -157,7 +159,7 @@
           "title": "DreamDiary [WIP]",
           "studyProgramme": "",
           "semester": "",
-          "images": [""],
+          "media": [""],
           "tools": ["Flutter"],
           "description": "",
           "link": {
@@ -170,7 +172,7 @@
           "title": "Music Player [WIP]",
           "studyProgramme": "",
           "semester": "",
-          "images": [""],
+          "media": [""],
           "tools": ["Flutter"],
           "description": "",
           "link": {
@@ -183,7 +185,7 @@
           "title": "Cosmic Purrsuit",
           "studyProgramme": "Digital Media Production",
           "semester": "3",
-          "images": [""],
+          "media": [""],
           "tools": [
             "Autodesk Maya",
             "Substance Painter",
@@ -202,7 +204,7 @@
           "title": "Chibi Sushi",
           "studyProgramme": "Digital Media Production",
           "semester": "3",
-          "images": [""],
+          "media": [""],
           "tools": ["Autodesk Maya", "Substance Painter", "After Effects"],
           "description": "",
           "link": {
@@ -215,9 +217,16 @@
           "title": "Swampify",
           "studyProgramme": "Creative Computing",
           "semester": "6",
-          "images": ["swampify-1.png"],
+          "media": [
+            "swampify-1.png",
+            "swampify-2.png",
+            "swampify-3.png",
+            "swampify-4.png",
+            "swampify-5.png",
+            "https://www.youtube.com/embed/ltDcQYpgRRo?si=onF5jPWO8q3WvaR4"
+          ],
           "tools": ["Unity", "Blender", "Clip Studio Paint"],
-          "description": "This was the biggest project of my bachelor programme, as it was also the final one, created in the last semester which was specifically dedicated to working on one big project. The assignment was to create a serious game, so over the course of about 4 months, five other study colleagues and I created a cozy puzzle game which also teaches players about the restoration of swamp landscapes. <br><br> I was our lead for everything related to the game graphics, and worked on concept art, 3D models and textures. Besides, I also implemented some features in the code as well as VFX - we were a small team with little time so everyone to help on the things that were currently needed. We were really happy with the end result, and when we presented it at our university's project exhibition at the end of the semester it was very well received. Later on it was even featured in the Student Project Showcase on the official Unity Twitch channel.",
+          "description": "This was the biggest project of my bachelor programme, as it was also the final one, created in the last semester which was specifically dedicated to working on one big project. The assignment was to create a serious game, so over the course of about 4 months, five other study colleagues and I created a cozy puzzle game which also teaches players about the restoration of swamp landscapes. <br><br> I was our lead for everything related to the game graphics, and worked on concept art, 3D models and textures. Besides that, I also implemented some features in the code as well as VFX - we were a small team with little time so everyone helped on the things that were currently needed. We were really happy with the end result, and when we presented it at our university's project exhibition at the end of the semester it was very well received. Later on it was also featured in the Student Project Showcase on the official Unity Twitch channel.",
           "link": {
             "text": "Here you can download it from itch.io and try it out for yourself!",
             "url": "https://shellrider.itch.io/swampify"
@@ -228,11 +237,11 @@
           "title": "Tides of Fortune",
           "studyProgramme": "Creative Computing",
           "semester": "4",
-          "images": ["tides-of-fortune-1.png"],
+          "media": ["tides-of-fortune-1.png"],
           "tools": ["Unity", "Blender", "Clip Studio Paint"],
           "description": "This 3D adventure game was done for our fourth Creative Codelab (two week intensive course at the end of the semester) and was done as a group project with three of my study colleagues. I was responsible for creating the main character with all of their features (concept, modelling, texturing, rigging, animating), as well as some other graphical assets, both 2D and 3D, like the treasure chest or the inventory UI. I also implemented some features in the code, like the item collection.",
           "link": {
-            "text": "Here you can download it from GitHub and try it for yourself!",
+            "text": "You can download the executable (Windows only) from GitHub and try it for yourself!",
             "url": "https://github.com/alexS317/Tides-of-Fortune/releases/tag/v1.0.0"
           }
         },
@@ -241,7 +250,7 @@
           "title": "The Hunt for the Pirate Gold",
           "studyProgramme": "Creative Computing",
           "semester": "4",
-          "images": [""],
+          "media": [""],
           "tools": ["Unity", "Blender"],
           "description": "",
           "link": {
@@ -254,7 +263,7 @@
           "title": "Space Workshop",
           "studyProgramme": "Creative Computing",
           "semester": "4",
-          "images": [""],
+          "media": [""],
           "tools": ["Unity", "Spine 2D", "Clip Studio Paint", "After Effects"],
           "description": "",
           "link": {
@@ -267,7 +276,7 @@
           "title": "Pirates Memory",
           "studyProgramme": "Creative Computing",
           "semester": "3",
-          "images": [""],
+          "media": [""],
           "tools": ["Nuxt"],
           "description": "",
           "link": {
@@ -280,7 +289,7 @@
           "title": "Artify",
           "studyProgramme": "Creative Computing",
           "semester": "2",
-          "images": [""],
+          "media": [""],
           "tools": ["Node.js"],
           "description": "",
           "link": {

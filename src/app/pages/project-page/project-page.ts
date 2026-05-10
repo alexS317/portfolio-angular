@@ -5,10 +5,12 @@ import { ActivatedRoute, RouterLink } from '@angular/router';
 import { map } from 'rxjs';
 import { toSignal } from '@angular/core/rxjs-interop';
 import { ProjectsService } from '../../services/projects-service';
+import { TranslatePipe } from '@ngx-translate/core';
+import { MediaCarousel } from './components/media-carousel/media-carousel';
 
 @Component({
   selector: 'app-project-page',
-  imports: [ToolTag, RouterLink],
+  imports: [ToolTag, RouterLink, TranslatePipe, MediaCarousel],
   templateUrl: './project-page.html',
 })
 export class ProjectPage {

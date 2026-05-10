@@ -1,13 +1,18 @@
 <div class="flex flex-col gap-4">
   <a routerLink="" class="flex flex-row items-center gap-4">
     <i class="pi pi-arrow-left text-3xl"></i>
-    <p class="text-[20px]">Back to Projects</p>
+    <p class="text-xl">{{ 'app.project.backButton' | translate }}</p>
   </a>
   @if (!project()) {
-    <p class="text-center">No project with this URL was found.</p>
+    <p class="text-center">{{ 'app.project.noProjectFound' | translate }}</p>
   } @else {
-    <div class="flex flex-row">
-      <div></div>
+    <div class="flex flex-col gap-6 lg:flex-row">
+      <app-media-carousel
+        class="lg:max-w-[55%]"
+        [projectId]="project()?.id ?? ''"
+        [mediaItems]="project()?.media ?? []"
+      ></app-media-carousel>
+
       <section class="flex flex-col gap-6">
         <div class="flex flex-col gap-2">
           <h1>{{ project()?.title }}</h1>

@@ -6,7 +6,6 @@ import { RouterLink } from '@angular/router';
   selector: 'app-project-card',
   imports: [RouterLink],
   templateUrl: './project-card.html',
-  styles: ``,
 })
 export class ProjectCard {
   project = input.required<Project>();

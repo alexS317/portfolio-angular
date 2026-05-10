@@ -1,0 +1,59 @@
+@let youtubeVideos = youtubePreviewArray();
+
+<div class="flex flex-col gap-3">
+  <div class="aspect-video overflow-hidden" #carouselContainer>
+    <div class="flex h-full flex-row transition duration-500 ease-in-out" #carousel>
+      @for (item of mediaItems(); track $index) {
+        <div class="relative aspect-video h-full">
+          @if (youtubeVideos[$index].isVideo) {
+            <iframe
+              #iframe
+              class="aspect-video max-w-full"
+              width=""
+              height=""
+              [src]="sanitizeYoutubeUrl(item)"
+              title="YouTube video player"
+              frameborder="0"
+              allow="
+                accelerometer;
+                clipboard-write;
+                encrypted-media;
+                gyroscope;
+                picture-in-picture;
+                web-share;
+              "
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+            <div
+              class="absolute inset-0 z-10 cursor-pointer"
+              [style.pointer-events]="overlayActive() ? 'auto' : 'none'"
+              (mousedown)="stopAutoScrolling()"
+            ></div>
+          } @else {
+            <img class="aspect-video" [src]="path() + item" alt="" />
+          }
+        </div>
+      }
+    </div>
+  </div>
+
+  <div class="grid grid-cols-3 gap-2 sm:grid-cols-4">
+    @for (item of mediaItems(); track $index) {
+      <div
+        class="relative flex cursor-pointer items-center justify-center brightness-50 transition duration-200 ease-in-out hover:brightness-100"
+        [class.brightness-100]="currentItemId() === $index"
+        (click)="onSelectItem($index)"
+        (keypress)="onSelectItem($index)"
+        tabindex="0"
+      >
+        @if (youtubeVideos[$index].isVideo) {
+          <img class="" [src]="youtubeVideos[$index].videoId" alt="" />
+          <i class="pi pi-play absolute z-10 text-5xl"></i>
+        } @else {
+          <img class="" [src]="path() + item" alt="" />
+        }
+      </div>
+    }
+  </div>
+</div>

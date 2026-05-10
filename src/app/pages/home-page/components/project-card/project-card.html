@@ -1,5 +1,5 @@
 <a class="flex flex-col gap-2" [routerLink]="'projects/' + project().id">
-  <img [src]="'images/projects/' + project().id + '/' + project().images[0]" alt="" />
+  <img [src]="'images/projects/' + project().id + '/' + project().media[0]" alt="" />
   <div class="flex flex-row justify-between">
     <div class="flex flex-col font-bold">
       <h4>{{ project().title }}</h4>
