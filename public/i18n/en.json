@@ -144,41 +144,27 @@
         {
           "id": "comfort-zone-remake",
           "title": "ComfortZone [Remake]",
-          "studyProgramme": "",
-          "semester": "",
           "media": [""],
-          "tools": ["Flutter"],
-          "description": "",
+          "tools": ["Flutter", "SQLite"],
+          "description": "I built this simple mobile app to learn Flutter, after I had done an online course on it and wanted to practise by doing a project of my own. The concept already existed before, as I had created an earlier version of the same app for a mobile coding course in the 3rd semester together with a study colleague, at that time with Kotlin. In the app, users can upload pictures of their favourite fictional characters. Whenever they open the app, they receive a random positive affirmation (which is also customisable) along with one of the images, which should help dealing with stress and anxiety in their everyday life.<br><br>I kept the functionalities mostly the same and just focused instead on learning how to implement them with the new language. In the future I may try to add new features though, such as allowing users to organise the characters into folders.",
           "link": {
-            "text": "",
-            "url": ""
+            "text": "If you want to try it for yourself, you can download the APK file from my GitHub (Android only)!",
+            "url": "https://github.com/alexS317/comfort_zone_remake/releases/tag/v1.0.0"
           }
         },
         {
           "id": "dream-diary",
           "title": "DreamDiary [WIP]",
-          "studyProgramme": "",
-          "semester": "",
           "media": [""],
-          "tools": ["Flutter"],
-          "description": "",
-          "link": {
-            "text": "",
-            "url": ""
-          }
+          "tools": ["Flutter", "Firebase"],
+          "description": "I started building this app originally because I wanted to learn lucid dreaming, but always struggled to remember my dreams. In this app, users should be able to track their dreams in a calendar, mark whether or not they had a lucid dream and write down notes. I also wanted to use it as an opportunity to learn how to implement user authentication and use Firebase as a back-end.<br><br>In its current state, the app is still very much a work in progress, and unfortunately I did not have the time to continue working on it for a longer while. I still hope that I will be able to do so though at some point, as I would want to be able to actually use it."
         },
         {
           "id": "music-player",
           "title": "Music Player [WIP]",
-          "studyProgramme": "",
-          "semester": "",
           "media": [""],
           "tools": ["Flutter"],
-          "description": "",
-          "link": {
-            "text": "",
-            "url": ""
-          }
+          "description": "The main motivation to start this project was actually frustration, I was very annoyed that the default music player on my phone included ads, despite me just wanting to listen to music I had stored locally on my device. So I decided to just code my own music player app instead!<br><br>I threw this together in a very short span of just a few days as I wanted to be able to use it as soon as possible. Therefore I admit it is rather messy, the basic functions work, but there are some bugs and is definitely in need of a thorough refactoring when I have the time for it. Still I think it helped me getting more familiar with Flutter, as also used some packages and techniques that I did not know before yet."
         },
         {
           "id": "cosmic-purrsuit",
@@ -188,16 +174,13 @@
           "media": [""],
           "tools": [
             "Autodesk Maya",
+            "VRay",
             "Substance Painter",
             "Blender",
             "After Effects",
             "Premiere Pro"
           ],
-          "description": "",
-          "link": {
-            "text": "",
-            "url": ""
-          }
+          "description": "For our masterclass project during this semester, I created an animated short film together with two other study colleagues. Together we decided on an idea - a chance meeting between a cat and a UFO - and developed it further through concept art and storyboarding. My main focus was especially our main character, the cat. I created the concept art for it and later was also responsible for the modelling, texturing, rigging, and parts of the animation. It was my first time creating and working with a quadruped character model, and I ran into several obstacles along the way. For instance, the first iteration of the face looked rather unsettling because the proportions were not right, and especially the rigging and weight-painting gave me a lot of headaches (we decided to use the pre-built cat rig from Blender due to time constraints, but adaptations were still necessary).<br><br>Once we moved past those struggles, things got easier though, and especially once we reached the VFX and editing stage we could slowly see everything come together. There is of course always room for improvement, but we are very happy about what we achieved, especially in such a small team. It also has a particularly special meaning to me, as the design of the cat was inspired by my own beloved cat Maxi, who sadly left this life far too early already.<br><br>The film is currently not publicly available in full length yet, as we may still want to submit it to a few animation festivals first. Therefore, for now I only included a small video compilation of the scenes where I did the character animation and VFX."
         },
         {
           "id": "chibi-sushi",
@@ -205,12 +188,8 @@
           "studyProgramme": "Digital Media Production",
           "semester": "3",
           "media": [""],
-          "tools": ["Autodesk Maya", "Substance Painter", "After Effects"],
-          "description": "",
-          "link": {
-            "text": "",
-            "url": ""
-          }
+          "tools": ["Autodesk Maya", "VRay", "Phoenix", "Substance Painter", "After Effects"],
+          "description": "For our individual project during this semester, the assignment was to model and animate a simple, nonhuman character based on any inanimate object. I decided to create a piece of sushi in a cutesy, chibi-like style. I also used the project as an opportunity to get a bit more familiar with Substance Painter, and I am especially happy with the stylised salmon texture I created. For the rig I used a lattice deformer, which caused some minor issues during setup, but later worked just how I wanted it to. Since one requirement was also to use Phoenix simulations, I animated the sushi jumping into a bowl of soy sauce. I did work on a very tight deadline, which is why I mainly focused on the character and left the environment rather plain, but I am still happy about my learnings during this project."
         },
         {
           "id": "swampify",
@@ -239,7 +218,7 @@
           "semester": "4",
           "media": ["tides-of-fortune-1.png"],
           "tools": ["Unity", "Blender", "Clip Studio Paint"],
-          "description": "This 3D adventure game was done for our fourth Creative Codelab (two week intensive course at the end of the semester) and was done as a group project with three of my study colleagues. I was responsible for creating the main character with all of their features (concept, modelling, texturing, rigging, animating), as well as some other graphical assets, both 2D and 3D, like the treasure chest or the inventory UI. I also implemented some features in the code, like the item collection.",
+          "description": "This 3D adventure game was done for our fourth Creative Codelab (two week intensive course at the end of the semester) and was done as a group project with three of my study colleagues. I was responsible for creating the main character with all of their features (concept, modelling, texturing, rigging, animating), as well as some other graphical assets, both 2D and 3D, like the treasure chest or the inventory UI. I also implemented some features in the code, like the item collection. The project was intense, but also very fun to work on, and even though none of us in the team had worked with Unity prior to the semester, we were happy with what we could achieve in this short amount of time.",
           "link": {
             "text": "You can download the executable (Windows only) from GitHub and try it for yourself!",
             "url": "https://github.com/alexS317/Tides-of-Fortune/releases/tag/v1.0.0"
@@ -252,10 +231,10 @@
           "semester": "4",
           "media": [""],
           "tools": ["Unity", "Blender"],
-          "description": "",
+          "description": "I built this simple 3D game as the final assignment for my Unity class. The main task was to create a small playable game with at least two levels and showcase an implementation of basic concepts like character movement, interaction with items or random spawning of elements. I also took it as an opportunity to experiment with shaders for the first time in order to create the water. All 3D assets except for the ship were made by myself, the player character was simultaneously my final submission for a 3D modelling class, for the game I just had to rig and animate him.<br><br>The video that I included is pretty long as I have to explain a lot (it was a mandatory part of the assignment), but you can skip through it to see a bit of the gameplay.",
           "link": {
-            "text": "",
-            "url": ""
+            "text": "Here you can play a browser version of the game!",
+            "url": "https://play.unity.com/en/games/bc3d84a7-e999-4cc6-9696-4c504d7aac91/the-hunt-for-the-pirate-gold"
           }
         },
         {
@@ -265,10 +244,10 @@
           "semester": "4",
           "media": [""],
           "tools": ["Unity", "Spine 2D", "Clip Studio Paint", "After Effects"],
-          "description": "",
+          "description": "For my elective course 2D Game Animation I decided to build a simple platformer game. During the first part of the course (in the 3rd semester) we learned Spine 2D, and I designed, rigged and animated the player character. The second part of the course gave an introduction to Unity’s 2D game features, where I created the game itself as my final assignment. All the assets were also drawn by myself. The course also included a small section on After Effects (which I had never used before), where the task was to create a mini-trailer for the game.",
           "link": {
-            "text": "",
-            "url": ""
+            "text": "Here you can play a browser version of the game!",
+            "url": "https://play.unity.com/en/games/5fff3ef5-a7bc-4711-b14c-ba3b2acef5a4/space-workshop"
           }
         },
         {
@@ -277,11 +256,11 @@
           "studyProgramme": "Creative Computing",
           "semester": "3",
           "media": [""],
-          "tools": ["Nuxt"],
-          "description": "",
+          "tools": ["Nuxt", "Pinia"],
+          "description": "I created this pirate-themed memory game as the final project for my front-end development course, which taught the basic concepts of frameworks like Vue and Nuxt. The assignment was to create either a web-based game or a simple website. The game is currently not adapted for smaller mobile devices (I would recommend a screen at least the size of an iPad) though hopefully I can update it accordingly in the future if I find the time to do so.",
           "link": {
-            "text": "",
-            "url": ""
+            "text": "Here you can give it a try!",
+            "url": "https://pirates-memory.netlify.app/"
           }
         },
         {
@@ -289,13 +268,9 @@
           "title": "Artify",
           "studyProgramme": "Creative Computing",
           "semester": "2",
-          "media": [""],
-          "tools": ["Node.js"],
-          "description": "",
-          "link": {
-            "text": "",
-            "url": ""
-          }
+          "media": ["https://www.youtube.com/embed/sQ-vypEhS1I?si=1xL43_sxzIbev7lj"],
+          "tools": ["Express", "EJS", "MySQL"],
+          "description": "I created this website during my second Creative Code Lab (two week intensive project at the end of the semester), which focused on full-stack development. The goal was to make a simple website (for example a webshop, a social media clone, etc.) where users could sign up, customise their profile, and perform other types of interactions. I created a small art sharing platform (inspired by DeviantArt) where people could upload their drawings. I used the Express framework and a MySQL database to store the user data. The design was also made by myself and for the example images which I used for testing, I simply used various pieces of my own fanart drawings that I had done in the recent months.<br><br>Unfortunately, the database and hosting that was provided for the project by the university is not available anymore, which is why it is currently not accessible online. I have included a video though which I recorded as part of the assignment, where I show the most important parts of the application."
         }
       ]
     }

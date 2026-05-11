@@ -34,15 +34,11 @@
 
   @layer components {
     .animate-underline {
-      @apply relative;
+      @apply inline bg-linear-0 from-teal-200 to-teal-200 bg-size-[0%_4px] bg-position-[0_115%] bg-no-repeat decoration-transparent transition-all duration-400 ease-in-out;
     }
 
-    .animate-underline::after {
-      @apply absolute -bottom-0.5 left-0 h-0.5 w-full scale-x-0 rounded-sm bg-teal-200 transition duration-400 ease-in-out content-[''];
-    }
-
-    .animate-underline:hover::after {
-      @apply scale-x-100;
+    .animate-underline:hover {
+      @apply bg-size-[100%_4px];
     }
   }
 }

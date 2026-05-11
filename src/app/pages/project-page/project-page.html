@@ -23,7 +23,7 @@
           }
         </div>
 
-        <div class="flex flex-row gap-3">
+        <div class="flex flex-row flex-wrap gap-3">
           @for (tool of project()?.tools; track $index) {
             <app-tool-tag [tool]="tool"></app-tool-tag>
           }
