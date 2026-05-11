@@ -1,11 +1,13 @@
 <a
-  class="text-5xl"
+  class="text-5xl transition duration-300 ease-in-out hover:text-teal-300"
   [href]="linkType() === 'mail' ? 'mailto:' + link() : '' + link()"
   [target]="linkType() === 'link' ? '_blank' : ''"
   [rel]="linkType() === 'link' ? 'noopener noreferrer' : ''"
 >
-  @if (primeIcon()) {
-    <i [class]="'pi pi-' + primeIcon()"></i>
-  }
-  <ng-content></ng-content>
+  <div class="transition duration-300 ease-in-out hover:-translate-y-1">
+    @if (primeIcon()) {
+      <i class="" [class]="'pi pi-' + primeIcon()"></i>
+    }
+    <ng-content></ng-content>
+  </div>
 </a>

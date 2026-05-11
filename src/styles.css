@@ -31,4 +31,18 @@
   h6 {
     @apply font-semibold;
   }
+
+  @layer components {
+    .animate-underline {
+      @apply relative;
+    }
+
+    .animate-underline::after {
+      @apply absolute -bottom-0.5 left-0 h-0.5 w-full scale-x-0 rounded-sm bg-teal-200 transition duration-400 ease-in-out content-[''];
+    }
+
+    .animate-underline:hover::after {
+      @apply scale-x-100;
+    }
+  }
 }

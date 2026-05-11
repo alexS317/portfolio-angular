@@ -9,7 +9,7 @@
             <iframe
               #iframe
               class="aspect-video max-w-full"
-              width=""
+              [width]="containerWidth()"
               height=""
               [src]="sanitizeYoutubeUrl(item)"
               title="YouTube video player"
