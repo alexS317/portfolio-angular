@@ -1,4 +1,4 @@
-import { Component, computed, inject } from '@angular/core';
+import { afterNextRender, Component, computed, inject } from '@angular/core';
 import { Project } from '../../models/project.model';
 import { ToolTag } from './components/tool-tag/tool-tag';
 import { ActivatedRoute, RouterLink } from '@angular/router';
@@ -39,4 +39,10 @@ export class ProjectPage {
         return this.project()?.semester + 'th';
     }
   });
+
+  constructor() {
+    afterNextRender(() => {
+      window.scrollTo({ top: 0 });
+    });
+  }
 }

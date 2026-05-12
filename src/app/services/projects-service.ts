@@ -15,11 +15,11 @@ export class ProjectsService {
   }
 
   public getUniversityProjects(): Project[] {
-    return this.projects()?.filter(p => p.semester !== undefined) ?? [];
+    return this.projects()?.filter(p => p.category === 'university') ?? [];
   }
 
   public getPersonalProjects(): Project[] {
-    return this.projects()?.filter(p => p.semester === undefined) ?? [];
+    return this.projects()?.filter(p => p.category === 'personal') ?? [];
   }
 
   public getProject(id: string): Project | undefined {

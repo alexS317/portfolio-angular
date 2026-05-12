@@ -144,6 +144,7 @@
         {
           "id": "comfort-zone-remake",
           "title": "ComfortZone [Remake]",
+          "category": "personal",
           "media": [""],
           "tools": ["Flutter", "SQLite"],
           "description": "I built this simple mobile app to learn Flutter, after I had done an online course on it and wanted to practise by doing a project of my own. The concept already existed before, as I had created an earlier version of the same app for a mobile coding course in the 3rd semester together with a study colleague, at that time with Kotlin. In the app, users can upload pictures of their favourite fictional characters. Whenever they open the app, they receive a random positive affirmation (which is also customisable) along with one of the images, which should help dealing with stress and anxiety in their everyday life.<br><br>I kept the functionalities mostly the same and just focused instead on learning how to implement them with the new language. In the future I may try to add new features though, such as allowing users to organise the characters into folders.",
@@ -155,6 +156,7 @@
         {
           "id": "dream-diary",
           "title": "DreamDiary [WIP]",
+          "category": "personal",
           "media": [""],
           "tools": ["Flutter", "Firebase"],
           "description": "I started building this app originally because I wanted to learn lucid dreaming, but always struggled to remember my dreams. In this app, users should be able to track their dreams in a calendar, mark whether or not they had a lucid dream and write down notes. I also wanted to use it as an opportunity to learn how to implement user authentication and use Firebase as a back-end.<br><br>In its current state, the app is still very much a work in progress, and unfortunately I did not have the time to continue working on it for a longer while. I still hope that I will be able to do so though at some point, as I would want to be able to actually use it."
@@ -162,6 +164,7 @@
         {
           "id": "music-player",
           "title": "Music Player [WIP]",
+          "category": "personal",
           "media": [""],
           "tools": ["Flutter"],
           "description": "The main motivation to start this project was actually frustration, I was very annoyed that the default music player on my phone included ads, despite me just wanting to listen to music I had stored locally on my device. So I decided to just code my own music player app instead!<br><br>I threw this together in a very short span of just a few days as I wanted to be able to use it as soon as possible. Therefore I admit it is rather messy, the basic functions work, but there are some bugs and is definitely in need of a thorough refactoring when I have the time for it. Still I think it helped me getting more familiar with Flutter, as also used some packages and techniques that I did not know before yet."
@@ -169,6 +172,7 @@
         {
           "id": "cosmic-purrsuit",
           "title": "Cosmic Purrsuit",
+          "category": "university",
           "studyProgramme": "Digital Media Production",
           "semester": "3",
           "media": [""],
@@ -185,6 +189,7 @@
         {
           "id": "chibi-sushi",
           "title": "Chibi Sushi",
+          "category": "university",
           "studyProgramme": "Digital Media Production",
           "semester": "3",
           "media": [""],
@@ -194,6 +199,7 @@
         {
           "id": "swampify",
           "title": "Swampify",
+          "category": "university",
           "studyProgramme": "Creative Computing",
           "semester": "6",
           "media": [
@@ -214,6 +220,7 @@
         {
           "id": "tides-of-fortune",
           "title": "Tides of Fortune",
+          "category": "university",
           "studyProgramme": "Creative Computing",
           "semester": "4",
           "media": ["tides-of-fortune-1.png"],
@@ -227,6 +234,7 @@
         {
           "id": "the-hunt-for-the-pirate-gold",
           "title": "The Hunt for the Pirate Gold",
+          "category": "university",
           "studyProgramme": "Creative Computing",
           "semester": "4",
           "media": [""],
@@ -240,6 +248,7 @@
         {
           "id": "space-workshop",
           "title": "Space Workshop",
+          "category": "university",
           "studyProgramme": "Creative Computing",
           "semester": "4",
           "media": [""],
@@ -253,6 +262,7 @@
         {
           "id": "pirates-memory",
           "title": "Pirates Memory",
+          "category": "university",
           "studyProgramme": "Creative Computing",
           "semester": "3",
           "media": [""],
@@ -266,6 +276,7 @@
         {
           "id": "artify",
           "title": "Artify",
+          "category": "university",
           "studyProgramme": "Creative Computing",
           "semester": "2",
           "media": ["https://www.youtube.com/embed/sQ-vypEhS1I?si=1xL43_sxzIbev7lj"],
