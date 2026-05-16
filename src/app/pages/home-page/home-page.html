@@ -61,6 +61,7 @@
       <h3 #category id="university" class="text-teal-300">
         {{ 'app.home.universityHeading' | translate }}
       </h3>
+      <p [innerHTML]="'app.home.universityText' | translate"></p>
       <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
         @for (project of universityProjects(); track $index) {
           <app-project-card [project]="project"></app-project-card>
@@ -72,6 +73,7 @@
       <h3 #category id="personal" class="text-teal-300">
         {{ 'app.home.personalHeading' | translate }}
       </h3>
+      <p [innerHTML]="'app.home.personalText' | translate"></p>
       <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
         @for (project of personalProjects(); track $index) {
           <app-project-card [project]="project"></app-project-card>

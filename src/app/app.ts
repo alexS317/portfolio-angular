@@ -2,8 +2,7 @@ import { Component, inject } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { TranslateService } from '@ngx-translate/core';
 
-import { Footer } from './shared/footer/footer';
-
+import { Footer } from './components/footer/footer';
 @Component({
   selector: 'app-root',
   imports: [RouterOutlet, Footer],

@@ -21,7 +21,6 @@ export class ScrollHelperService {
   public setBaseUrls(urls: string[]): void {
     if (!this.baseUrls().some(u => urls.includes(u))) {
       this.baseUrls.update(u => [...u, ...urls]);
-      console.log(this.baseUrls());
     }
   }
 

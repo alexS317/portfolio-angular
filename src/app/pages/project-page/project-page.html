@@ -17,7 +17,7 @@
 
       <section class="flex flex-col gap-6">
         <div class="flex flex-col gap-2">
-          <h1>{{ project()?.title }}</h1>
+          <h1 class="text-teal-400">{{ project()?.title }}</h1>
           @if (semester()) {
             <h4>{{ project()?.studyProgramme }} | {{ semester() }} Semester</h4>
           }

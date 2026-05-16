@@ -28,10 +28,20 @@
             <div
               class="absolute inset-0 z-10 cursor-pointer"
               [style.pointer-events]="overlayActive() ? 'auto' : 'none'"
-              (mousedown)="stopAutoScrolling()"
+              (click)="stopAutoScrolling()"
+              (keypress)="stopAutoScrolling()"
+              tabindex="0"
             ></div>
+          } @else if (item.includes('.webm')) {
+            <video
+              class="aspect-video object-contain"
+              [src]="path() + item"
+              loop
+              autoplay
+              muted
+            ></video>
           } @else {
-            <img class="aspect-video" [src]="path() + item" alt="" />
+            <img class="aspect-video object-contain" [src]="path() + item" alt="" />
           }
         </div>
       }
@@ -48,10 +58,16 @@
         tabindex="0"
       >
         @if (youtubeVideos[$index].isVideo) {
-          <img class="" [src]="youtubeVideos[$index].videoId" alt="" />
+          <img class="aspect-video object-contain" [src]="youtubeVideos[$index].videoId" alt="" />
           <i class="pi pi-play absolute z-10 text-5xl"></i>
+        } @else if (item.includes('.webm')) {
+          <video
+            class="aspect-video object-contain"
+            [src]="path() + item"
+            preload="metadata"
+          ></video>
         } @else {
-          <img class="" [src]="path() + item" alt="" />
+          <img class="aspect-video object-contain" [src]="path() + item" alt="" />
         }
       </div>
     }
