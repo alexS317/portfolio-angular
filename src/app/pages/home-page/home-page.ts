@@ -16,10 +16,11 @@ import { IconLink } from './components/icon-link/icon-link';
 import { ProjectsService } from '../../services/projects-service';
 import { ProjectCard } from './components/project-card/project-card';
 import { ScrollHelperService } from '../../services/scroll-helper-service';
+import { NgOptimizedImage } from '@angular/common';
 
 @Component({
   selector: 'app-home-page',
-  imports: [TranslatePipe, ExperienceCard, SkillSection, IconLink, ProjectCard],
+  imports: [TranslatePipe, ExperienceCard, SkillSection, IconLink, ProjectCard, NgOptimizedImage],
   templateUrl: './home-page.html',
 })
 export class HomePage {

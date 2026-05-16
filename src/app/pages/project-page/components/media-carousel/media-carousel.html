@@ -41,7 +41,14 @@
               muted
             ></video>
           } @else {
-            <img class="aspect-video object-contain" [src]="path() + item" alt="" />
+            <img
+              class="aspect-video object-contain"
+              [ngSrc]="path() + item"
+              alt=""
+              width="1920"
+              height="1080"
+              priority
+            />
           }
         </div>
       }
@@ -67,7 +74,14 @@
             preload="metadata"
           ></video>
         } @else {
-          <img class="aspect-video object-contain" [src]="path() + item" alt="" />
+          <img
+            class="aspect-video object-contain"
+            [ngSrc]="path() + item"
+            alt=""
+            width="1920"
+            height="1080"
+            loading="lazy"
+          />
         }
       </div>
     }

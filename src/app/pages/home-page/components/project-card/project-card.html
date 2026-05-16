@@ -4,8 +4,11 @@
 >
   <img
     class="aspect-video object-contain object-top"
-    [src]="'images/projects/' + project().id + '/' + project().media[0]"
+    [ngSrc]="'images/projects/' + project().id + '/' + project().media[0]"
     alt=""
+    width="1920"
+    height="1080"
+    loading="lazy"
   />
   <div class="flex flex-row justify-between">
     <div class="flex flex-col font-bold">

@@ -1,3 +1,4 @@
+import { NgOptimizedImage } from '@angular/common';
 import {
   Component,
   computed,
@@ -13,7 +14,7 @@ import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-media-carousel',
-  imports: [],
+  imports: [NgOptimizedImage],
   templateUrl: './media-carousel.html',
 })
 export class MediaCarousel implements AfterViewInit, OnDestroy {
