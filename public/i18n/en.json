@@ -10,12 +10,12 @@
         "github": "https://github.com/alexS317"
       },
       "intro": {
-        "p1": "Welcome to my page! Here you can get to know someone who loves expressing their human creativity through the means of digital technologies. I have interests in various fields, such as different types of software development (games, web, mobile) as well as art and animation in both 2D and 3D. Below you can view some of my projects and find more information about me and my skillset.",
+        "p1": "Welcome to my page! Here you can get to know someone who loves expressing their human creativity through the means of digital technologies. I have interests in various fields, such as different types of software development (games, web, mobile) as well as art and animation in both 2D and 3D. Below you can view some of my projects and find more information about me and my skill set.",
         "p2": "If you want to get in touch regarding work opportunities or have any questions about my projects, do not hesitate to reach out to me via email or LinkedIn:"
       },
       "projectsHeading": "Projects",
       "projectsTexts": {
-        "p1": "Here I want to present some of the projects created or contributed to, to show what kind of work I am capable of and also enjoy doing. Hopefully more will be added over time as I continue learning.",
+        "p1": "Here I want to present some of the projects that I created or contributed to, to show what kind of work I am capable of and also enjoy doing. Hopefully more will be added over time as I continue learning.",
         "p2": "To gain a more in-depth look on some of them, you are also welcome to take a look at my profiles on ArtStation or GitHub:"
       },
       "universityHeading": "University",
@@ -32,32 +32,32 @@
       "jobHeading": "Professional Experience",
       "jobsList": [
         {
-          "timeframe": "Aug. 2024 - Mar. 2026",
+          "timeframe": "Aug. 2024 – Mar. 2026",
           "title": "Junior Developer",
           "company": "Digitalsunray Media GmbH",
           "tasks": [
-            "Front-end web development using Angular and Tailwind: implemented features in client projects (MIKiYo, YAYU) as well as the company's own product SunrAI",
-            "Creative development: built interactive advertisement banners using CSS and vanilla JS"
+            "Front-end web development using Angular and Tailwind: implemented features in client projects (MIKiYo, YAYU) as well as in the company's own product SunrAI",
+            "Creative development: built interactive advertisement banners using HTML, CSS and vanilla JS"
           ]
         },
         {
-          "timeframe": "Aug. 2023 - Jan. 2024",
+          "timeframe": "Aug. 2023 – Jan. 2024",
           "title": "Web Development Intern",
           "company": "Digitalsunray Media GmbH",
           "tasks": [
-            "Creative development: built interactive advertisement banners using CSS and vanilla JS"
+            "Creative development: built interactive advertisement banners using HTML, CSS and vanilla JS; created simple banners using Google Web Designer"
           ]
         }
       ],
       "educationHeading": "Education",
       "educationsList": [
         {
-          "timeframe": "Sept. 2024 - Oct. 2026",
-          "title": "Digital Media Production (Dipl.-Ing.)",
+          "timeframe": "Sept. 2024 – Oct. 2026",
+          "title": "Digital Media Production – Masterclass Animation & Visual Effects (Dipl.-Ing.)",
           "company": "University of Applied Sciences St. Pölten"
         },
         {
-          "timeframe": "Sept. 2021 - Oct. 2024",
+          "timeframe": "Sept. 2021 – Oct. 2024",
           "title": "Creative Computing (BSc)",
           "company": "University of Applied Sciences St. Pölten"
         }
@@ -65,16 +65,17 @@
       "skillSectionsList": [
         {
           "title": "Knowledge and Skills",
-          "description": "Sorted based on what I have spent the most time with and feel most experienced in.",
+          "description": "Roughly sorted based on what I have spent the most time with and feel most experienced in.",
           "section": [
             {
-              "subtitle": "Programming",
+              "subtitle": "Development",
               "list": [
                 "JavaScript/TypeScript, Angular",
                 "C# (mostly for Unity)",
                 "Flutter",
                 "Kotlin",
-                "PHP"
+                "PHP",
+                "SQL (MySQL, SQLite)"
               ]
             },
             {
@@ -82,17 +83,21 @@
               "list": ["3D Modelling + Animation", "Digital Illustration", "Responsive UI Design"]
             },
             {
+              "subtitle": "Other",
+              "list": ["Agile Software Development", "General Game Design Principles"]
+            },
+            {
               "subtitle": "Languages",
-              "list": ["German (native)", "English (C1)", "Latin"]
+              "list": ["German (native)", "English (C1-C2)", "Latin"]
             }
           ]
         },
         {
           "title": "Software and Tools",
-          "description": "Sorted based on what I tend to use most frequently.",
+          "description": "Sorted based on what I tend to use the most frequently.",
           "section": [
             {
-              "subtitle": "Programming",
+              "subtitle": "Development",
               "list": [
                 "Visual Studio Code",
                 "Unity",
@@ -127,7 +132,7 @@
                 "Unreal Engine & C++",
                 "ZBrush",
                 "Python",
-                "And of course deepening my knowledge in all those things that I am already familiar with :)"
+                "And of course also deepening my knowledge in the things that I am already familiar with :)"
               ]
             }
           ]
@@ -135,7 +140,7 @@
       ]
     },
     "footer": {
-      "builtWith": "Website built with Angular & Tailwind. Designed with Figma. Last updated: 16.05.2026",
+      "builtWith": "Website built with Angular & Tailwind. Designed with Figma. Last updated: 18.05.2026",
       "credits": "The pictures, images and graphics on this website are protected by copyright. All texts are copyrighted. <b>Image rights belong to:</b> Alexandra Fontner",
       "aiConsent": "The creator of the website does not consent to any of its contents being used for the training of generative AI tools."
     },
@@ -149,7 +154,7 @@
           "category": "personal",
           "media": ["comfort-zone-remake-1.webp"],
           "tools": ["Flutter", "SQLite"],
-          "description": "I built this simple mobile app to learn Flutter, after I had done an online course on it and wanted to practise by doing a project of my own. The concept already existed before, as I had created an earlier version of the same app for a mobile coding course in the 3rd semester together with a study colleague, at that time using Kotlin. In the app, users can upload pictures of their favourite fictional characters. Whenever they open the app, they receive a random positive affirmation (which is also customisable) along with one of the images, which should help dealing with stress and anxiety in their everyday life.<br><br>I kept the functionalities mostly the same and just focused instead on learning how to implement them with the new language. In the future I may try to add new features though, such as allowing users to organise the characters into folders.",
+          "description": "I built this simple mobile app to learn Flutter, after I had done an online course on it and wanted to practise by doing a project of my own. The concept already existed before, as I had created an earlier version of the same app for a mobile coding course in the 3rd semester together with a study colleague, at that time using Kotlin. In the app, users can upload pictures of their favourite fictional characters. Whenever they open the app, they receive a random positive affirmation (which is also customisable) along with one of the images, which should help them dealing with stress and anxiety in their everyday life.<br><br>I kept the functionalities mostly the same and instead just focused on learning how to implement them with the new language. In the future I would like to try to add new features though, such as allowing users to organise the characters into folders.",
           "link": {
             "text": "If you want to try it for yourself, you can download the APK file from my GitHub (Android only)!",
             "url": "https://github.com/alexS317/comfort_zone_remake/releases/tag/v1.0.0"
@@ -161,7 +166,7 @@
           "category": "personal",
           "media": ["dream-diary-1.webp"],
           "tools": ["Flutter", "Firebase"],
-          "description": "I started building this app originally because I wanted to learn lucid dreaming, but always struggled to remember my dreams. In this app, users should be able to track their dreams in a calendar, mark whether or not they had a lucid dream and write down notes. I also wanted to use it as an opportunity to learn how to implement user authentication and use Firebase as a back-end.<br><br>In its current state, the app is still very much a work in progress, and unfortunately I did not have the time to continue working on it for a longer while. I still hope that I will be able to do so though at some point, as I would want to be able to actually use it."
+          "description": "I started building this app originally because I wanted to learn lucid dreaming, but always struggled to remember my dreams. In Dream Diary, users should be able to track their dreams in a calendar, mark whether or not they had a lucid dream and write down details about what they remember from it. I also wanted to use it as an opportunity to learn how to implement user authentication and use Firebase as a back-end.<br><br>In its current state, the app is still very much a work in progress, and unfortunately I did not have the time to continue working on it for a longer while. I still hope that I will be able to do so though at some point, as I would want to be able to actually use it."
         },
         {
           "id": "music-player",
@@ -169,7 +174,7 @@
           "category": "personal",
           "media": ["music-player-1.webp"],
           "tools": ["Flutter"],
-          "description": "The main motivation to start this project was actually frustration, I was very annoyed that the default music player on my phone included ads, despite me just wanting to listen to music I had stored locally on my device. So I decided to just code my own music player app instead!<br><br>I threw this together in a very short span of just a few days as I wanted to be able to use it as soon as possible. Therefore I admit it is rather messy, the basic functions work, but there are some bugs and is definitely in need of a thorough refactoring when I have the time for it. Still I think it helped me getting more familiar with Flutter, as also used some packages and techniques that I did not know before yet."
+          "description": "The main motivation to start this project was actually frustration. I was very annoyed that the default music player on my phone included ads, despite me just wanting to listen to music I had stored locally on my device. So I decided to just code my own music player app instead!<br><br>I threw this together in a very short span of just a few days as I wanted to be able to use it as soon as possible. Therefore I admit it is rather messy, the basic functions work, but there are some bugs and is definitely in need of a thorough refactoring when I have the time for it. Still, I think it helped me getting more familiar with Flutter, as I also used some packages and techniques that I did not know before yet."
         },
         {
           "id": "cosmic-purrsuit",
@@ -193,7 +198,7 @@
             "After Effects",
             "Premiere Pro"
           ],
-          "description": "For our masterclass project during this semester, I created an animated short film together with two other study colleagues. Together we decided on an idea - a chance meeting between a cat and a UFO - and developed it further through concept art and storyboarding. My main focus was especially our main character, the cat. I created the concept art for it and later was also responsible for the modelling, texturing, rigging, and parts of the animation. It was my first time creating and working with a quadruped character model, and I ran into several obstacles along the way. For instance, the first iteration of the face looked rather unsettling because the proportions were not right, and especially the rigging and weight-painting gave me a lot of headaches (we decided to use the pre-built cat rig from Blender due to time constraints, but adaptations were still necessary).<br><br>Once we moved past those struggles, things got easier though, and especially once we reached the VFX and editing stage we could slowly see everything come together. There is of course always room for improvement, but we are very happy about what we achieved, especially in such a small team. It also has a particularly special meaning to me, as the design of the cat was inspired by my own beloved cat Maxi, who sadly left this life far too early already.<br><br>The film is currently not publicly available in full length yet, as we may still want to submit it to a few animation festivals first. Therefore, for now I only included a small video compilation of the scenes where I did the character animation and VFX."
+          "description": "For our masterclass project during this semester, I created an animated short film together with two other study colleagues. Together we decided on an idea – a chance meeting between a cat and a UFO – and developed it further through concept art and storyboarding. My primary focus was especially our main character, the cat. I created the concept art for it and later on was also responsible for the modelling, texturing, rigging, and parts of the animation. It was my first time creating and working with a quadruped character model, and I ran into several obstacles along the way. For instance, the first iteration of the face looked rather unsettling because the proportions were not right, and especially the rigging and weight-painting gave me a lot of headaches (we decided to use the pre-built cat rig from Blender due to time constraints, but adaptations were still necessary). Regardless I think it was a valuable learning experience.<br><br>Once we moved past those struggles, things got easier though, and especially once we reached the VFX and editing stage we could slowly see everything come together. There is of course always room for improvement, but we are very happy about what we achieved, especially in such a small team. The film also has a particularly special meaning to me, as the design of the cat was inspired by my own beloved cat Maxi, who sadly left this life far too early already, but I think I was able to create a small memorial for her in this way.<br><br>The film is currently not publicly available in full length yet, as we may still want to submit it to a few animation festivals and student contests first. Therefore, for now I only included a small video compilation of the scenes where I did the character animation and VFX."
         },
         {
           "id": "chibi-sushi",
@@ -208,7 +213,7 @@
             "https://www.youtube.com/embed/gPPhDRKb3Pk?si=aHaGXOY-1zw2JiRA"
           ],
           "tools": ["Autodesk Maya", "VRay", "Phoenix", "Substance Painter", "After Effects"],
-          "description": "For our individual project during this semester, the assignment was to model and animate a simple, nonhuman character based on any inanimate object. I decided to create a piece of sushi in a cutesy, chibi-like style. I also used the project as an opportunity to get a bit more familiar with Substance Painter, and I am especially happy with the stylised salmon texture I created. For the rig I used a lattice deformer, which caused some minor issues during setup, but later worked just how I wanted it to. Since one requirement was also to use Phoenix simulations, I animated the sushi jumping into a bowl of soy sauce. I did work on a very tight deadline, which is why I mainly focused on the character and left the environment rather plain, but I am still happy about my learnings during this project."
+          "description": "For our individual animation project during this semester, the assignment was to model and animate a simple, nonhuman character based on any inanimate object. I decided to create a piece of sushi in a cutesy, chibi-like style. I also used the project as an opportunity to get a bit more familiar with Substance Painter, and I am especially happy with the stylised salmon texture I created. For the rig I used a lattice deformer, which caused some minor issues during setup, but later worked just how I wanted it to. Since one requirement was also to use Phoenix simulations, I animated the sushi jumping into a bowl of soy sauce. I did work on a very tight deadline, which is why I mainly focused on the character and left the environment rather plain (and also left out other extras like the sauce pitcher from the concept art), but I am still happy about my learnings during this project."
         },
         {
           "id": "swampify",
@@ -225,7 +230,7 @@
             "https://www.youtube.com/embed/ltDcQYpgRRo?si=onF5jPWO8q3WvaR4"
           ],
           "tools": ["Unity", "Blender", "Clip Studio Paint"],
-          "description": "This was the biggest project of my bachelor programme, as it was also the final one, created in the last semester which was specifically dedicated to working on one big project. The assignment was to create a serious game, so over the course of about 4 months, five other study colleagues and I created a cozy puzzle game which also teaches players about the restoration of swamp landscapes. <br><br> I was our lead for everything related to the game graphics, and worked on concept art, 3D models and textures. Besides that, I also implemented some features in the code as well as VFX - we were a small team with little time so everyone helped on the things that were currently needed. We were really happy with the end result, and when we presented it at our university's project exhibition at the end of the semester it was very well received. Later on it was also featured in the Student Project Showcase on the official Unity Twitch channel.",
+          "description": "This was the biggest project of my bachelor programme, as it was also the final one, created in the last semester which was specifically dedicated to working on one big project. The assignment was to create a serious game, so over the course of about 4 months, five other study colleagues and I created a cozy puzzle game which also teaches players about the restoration of swamp landscapes. <br><br> I was our lead for everything related to the game's graphics, and worked on concept art, 3D models and textures. Besides that, I also implemented some features in the code as well as VFX – we were a small team with little time so everyone helped with the things that were currently needed. We were really happy with the end result, and when we presented it at our university's project exhibition at the end of the semester it was very well received. Later on it was also featured in the Student Project Showcase on the official Unity Twitch channel.",
           "link": {
             "text": "Here you can download it from itch.io and try it out for yourself!",
             "url": "https://shellrider.itch.io/swampify"
@@ -247,7 +252,7 @@
             "https://www.youtube.com/embed/nueHHxwOPMI?si=QO4YsuQYFwxkuCv7"
           ],
           "tools": ["Unity", "Blender", "Clip Studio Paint"],
-          "description": "This 3D adventure game was done for our fourth Creative Codelab (two week intensive course at the end of the semester) and was done as a group project with three of my study colleagues. I was responsible for creating the main character with all of their features (concept, modelling, texturing, rigging, animating), as well as some other graphical assets, both 2D and 3D, like the treasure chest or the inventory UI. I also implemented some features in the code, like the item collection. The project was intense, but also very fun to work on, and even though none of us in the team had worked with Unity prior to the semester, we were happy with what we could achieve in this short amount of time.",
+          "description": "This 3D adventure game was done for our fourth Creative Code Lab (two week intensive course at the end of the semester) and was done as a group project with three of my study colleagues. I was responsible for creating the main character with all of their features (concept, modelling, texturing, rigging, animating), as well as some other graphical assets, both 2D and 3D, like the treasure chest or the inventory UI. I also implemented some features in the code, like the item collection. The project was intense, but also very fun to work on, and even though none of us in the team had worked with Unity prior to the semester, we were very happy with what we could achieve in this short amount of time.",
           "link": {
             "text": "You can download the executable (Windows only) from GitHub and try it for yourself!",
             "url": "https://github.com/alexS317/Tides-of-Fortune/releases/tag/v1.0.0"
@@ -267,7 +272,7 @@
             "https://www.youtube.com/embed/JFjlWnGSssQ?si=CK0F9NcSk3RCDttq"
           ],
           "tools": ["Unity", "Blender"],
-          "description": "I built this simple 3D game as the final assignment for my Unity class. The main task was to create a small playable game with at least two levels and showcase an implementation of basic concepts like character movement, interaction with items or random spawning of elements. I also took it as an opportunity to experiment with shaders for the first time in order to create the water. All 3D assets except for the ship were made by myself, the player character was simultaneously my final submission for a 3D modelling class, for the game I just had to rig and animate him.<br><br>The video that I included is pretty long as I have to explain a lot (it was a mandatory part of the assignment), but you can skip through it to see a bit of the gameplay.",
+          "description": "I built this simple 3D game as the final assignment for my Unity class. The main task was to create a small playable game with at least two levels and showcase an implementation of basic concepts like character movement, interaction with items or random spawning of elements. I also took it as an opportunity to experiment with shaders for the first time in order to create the water. All 3D assets except for the ship were made by myself, the player character was simultaneously my final submission for a 3D modelling class, for the game I just had to rig and animate him.<br><br>The video that I included is pretty long as I have to explain a lot (it was a mandatory part of the assignment), but you can also skip through it to see a bit of the gameplay.",
           "link": {
             "text": "Here you can play a browser version of the game!",
             "url": "https://play.unity.com/en/games/bc3d84a7-e999-4cc6-9696-4c504d7aac91/the-hunt-for-the-pirate-gold"
@@ -320,7 +325,7 @@
             "https://www.youtube.com/embed/sQ-vypEhS1I?si=1xL43_sxzIbev7lj"
           ],
           "tools": ["Express", "EJS", "MySQL"],
-          "description": "I created this website during my second Creative Code Lab (two week intensive project at the end of the semester), which focused on full-stack development. The goal was to make a simple website (for example a webshop, a social media clone, etc.) where users could sign up, customise their profile, and perform other types of interactions. I created a small art sharing platform (inspired by DeviantArt) where people could upload their drawings. I used the Express framework and a MySQL database to store the user data. The design was also made by myself and for the example images which I used for testing, I simply used various pieces of my own fanart drawings that I had done in the recent months.<br><br>Unfortunately, the database and hosting that was provided for the project by the university is not available anymore, which is why it is currently not accessible online. I have included a video though which I recorded as part of the assignment, where I show the most important parts of the application."
+          "description": "I created this website during my second Creative Code Lab (two week intensive project at the end of the semester), which focused on full-stack web development. The goal was to make a simple website (for example a webshop, a social media clone, etc.) where users could sign up, customise their profile, and perform other types of interactions. I created a small art sharing platform (inspired by DeviantArt) where people could upload their drawings. I used the Express framework and a MySQL database to store the user data. The design was also made by myself and for the example images which I used for testing, I simply used various pieces of my own fan art drawings that I had done in the recent months.<br><br>Unfortunately, the database and hosting that was provided for the project by the university is not available anymore, which is why it is currently not accessible online. I have included a video though which I recorded as part of the assignment, where I show the most important parts of the application."
         }
       ]
     }
