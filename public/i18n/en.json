@@ -26,7 +26,7 @@
       "biography": {
         "p1": "I have always had a wide range of interests and enjoyed learning new things and expressing myself creatively. When I was a teenager and had to start thinking about what I wanted to do after school, I decided that I would like to work on computer games, either as an artist or developer. I have always enjoyed playing them (with some of my favourites nowadays being the two <i>Kingdom Come: Deliverance</i> games, <i>Medieval Dynasty</i>, and <i>Stellaris</i>, among many others), and the thought of contributing to the creation of future games was very exciting to me.",
         "p2": "After school I applied for the bachelor programme Creative Computing, where got to know various other use cases for programming besides games, and discovered that for example web applications and mobile apps can be super fun to develop as well. By now I have about two years of professional experience as a front-end web developer, and I would be very happy to both deepen my knowledge in this area, as well as expand my skills into other fields.",
-        "p3": "I want to be open about the fact that I do not use generative AI tools for any of my creative work (writing, illustration, 3D art etc.). I simply enjoy the process of creating these myself much more, and it would be quite stupid of me to outsource precisely the fun work to AI, wouldn't you agree?"
+        "p3": "While I agree that AI technologies can be an effective tool in software development if used as an assistive measure on top of one's own knowledge and skills, I also want to be open about the fact that I do not use generative AI tools for any of my creative work (writing, illustration, 3D art etc.). I simply enjoy the process of creating these myself much more, and it would be quite stupid of me to outsource precisely the fun work to AI, wouldn't you agree?"
       },
       "experienceTasks": "Tasks",
       "jobHeading": "Professional Experience",
@@ -140,7 +140,7 @@
       ]
     },
     "footer": {
-      "builtWith": "Website built with Angular & Tailwind. Designed with Figma. Last updated: 18.05.2026",
+      "builtWith": "Website built with Angular & Tailwind. Designed with Figma. Last updated: 20.05.2026",
       "credits": "The pictures, images and graphics on this website are protected by copyright. All texts are copyrighted. <b>Image rights belong to:</b> Alexandra Fontner",
       "aiConsent": "The creator of the website does not consent to any of its contents being used for the training of generative AI tools."
     },
