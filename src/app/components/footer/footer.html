@@ -2,9 +2,9 @@
   <p>{{ 'app.home.heading' | translate }}</p>
   <div class="flex flex-row">
     <p class="font-bold">Email:&nbsp;</p>
-    <a class="underline" [href]="'mailto:' + email()"> {{ 'app.home.links.email' | translate }} </a>
+    <a class="underline" [href]="'mailto:' + email()"> {{ email() }} </a>
   </div>
-  <p>{{ 'app.footer.builtWith' | translate }}</p>
+  <p>{{ 'app.footer.builtWith' | translate }}{{ lastUpdated() | date: 'longDate' }}</p>
   <p [innerHTML]="'app.footer.credits' | translate"></p>
   <p>{{ 'app.footer.aiConsent' | translate }}</p>
 </footer>
