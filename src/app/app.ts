@@ -3,9 +3,10 @@ import { RouterOutlet } from '@angular/router';
 import { TranslateService } from '@ngx-translate/core';
 
 import { Footer } from './components/footer/footer';
+import { CursorEffect } from './components/cursor-effect/cursor-effect';
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, Footer],
+  imports: [RouterOutlet, Footer, CursorEffect],
   templateUrl: './app.html',
 })
 export class App {
