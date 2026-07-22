@@ -9,6 +9,7 @@ export class ScrollHelperService {
   private readonly router = inject(Router);
   private readonly baseUrls = signal<string[]>([]);
   private readonly scrollTargetUrl = signal<string | null>(null);
+  public readonly scrollTarget = this.scrollTargetUrl.asReadonly();
 
   constructor() {
     this.router.events.pipe(takeUntilDestroyed()).subscribe(() => {
@@ -22,9 +23,5 @@ export class ScrollHelperService {
     if (!this.baseUrls().some(u => urls.includes(u))) {
       this.baseUrls.update(u => [...u, ...urls]);
     }
-  }
-
-  public getScrollTarget(): string | null {
-    return this.scrollTargetUrl();
   }
 }

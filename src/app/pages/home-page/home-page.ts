@@ -26,7 +26,7 @@ import { NgOptimizedImage } from '@angular/common';
 export class HomePage {
   private readonly translateService = inject(TranslateService);
   private readonly projectsService = inject(ProjectsService);
-  private readonly navHelperService = inject(ScrollHelperService);
+  private readonly scrollHelperService = inject(ScrollHelperService);
 
   protected readonly categoryHeadings = viewChildren<ElementRef<HTMLHeadingElement>>('category');
   protected readonly universityProjects = computed(() =>
@@ -45,10 +45,10 @@ export class HomePage {
 
   constructor() {
     afterNextRender(() => {
-      this.navHelperService.setBaseUrls(['/projects/']);
+      this.scrollHelperService.setBaseUrls(['/projects/']);
 
       this.categoryHeadings().find(e => {
-        if (this.navHelperService.getScrollTarget()?.includes(e.nativeElement.id)) {
+        if (this.scrollHelperService.scrollTarget()?.includes(e.nativeElement.id)) {
           e.nativeElement.scrollIntoView({ behavior: 'smooth' });
         }
       });

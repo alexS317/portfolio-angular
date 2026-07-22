@@ -6,6 +6,7 @@
 
 @theme {
   --font-sans: 'Elms Sans', 'sans-serif';
+  --underline-height: 4px;
 }
 
 @layer base {
@@ -34,11 +35,12 @@
 
   @layer components {
     .animate-underline {
-      @apply inline bg-linear-0 from-teal-200 to-teal-200 bg-size-[0%_4px] bg-position-[0_115%] bg-no-repeat decoration-transparent transition-all duration-400 ease-in-out;
+      @apply inline bg-linear-0 from-teal-200 to-teal-200 bg-position-[0_115%] bg-no-repeat decoration-transparent transition-all duration-400 ease-in-out;
+      background-size: 0% var(--underline-height);
     }
 
     .animate-underline:hover {
-      @apply bg-size-[100%_4px];
+      background-size: 100% var(--underline-height);
     }
   }
 }

@@ -125,13 +125,19 @@
         },
         {
           "title": "For the Future ...",
-          "description": "I love learning new skills, so here is just a small selection of what I would like to try out in the future:",
+          "description": "I love learning new skills, so here is just a small selection of what I would like to try out in the future.",
           "section": [
             {
+              "subtitle": "Actively learning at the moment",
+              "list": ["Vue.js/Nuxt", "Laravel", "Docker"]
+            },
+            {
+              "subtitle": "Other things I would like to try out",
               "list": [
                 "Unreal Engine & C++",
                 "ZBrush",
                 "Python",
+                "Java",
                 "And of course also deepening my knowledge in the things that I am already familiar with :)"
               ]
             }
@@ -141,6 +147,7 @@
     },
     "footer": {
       "builtWith": "Website built with Angular & Tailwind. Designed with Figma. Last updated: ",
+      "githubLink": "https://github.com/alexS317/portfolio-angular",
       "credits": "The pictures, images and graphics on this website are protected by copyright. All texts are copyrighted. <b>Image rights belong to:</b> Alexandra Fontner",
       "aiConsent": "The creator of the website does not consent to any of its contents being used for the training of generative AI tools."
     },
@@ -152,29 +159,35 @@
           "id": "comfort-zone-remake",
           "title": "ComfortZone [Remake]",
           "category": "personal",
+          "year": "2023/24",
           "media": ["comfort-zone-remake-1.webp"],
           "tools": ["Flutter", "SQLite"],
           "description": "I built this simple mobile app to learn Flutter, after I had done an online course on it and wanted to practise by doing a project of my own. The concept already existed before, as I had created an earlier version of the same app for a mobile coding course in the 3rd semester together with a study colleague, at that time using Kotlin. In the app, users can upload pictures of their favourite fictional characters. Whenever they open the app, they receive a random positive affirmation (which is also customisable) along with one of the images, which should help them dealing with stress and anxiety in their everyday life.<br><br>I kept the functionalities mostly the same and instead just focused on learning how to implement them with the new language. In the future I would like to try to add new features though, such as allowing users to organise the characters into folders.",
           "link": {
             "text": "If you want to try it for yourself, you can download the APK file from my GitHub (Android only)!",
             "url": "https://github.com/alexS317/comfort_zone_remake/releases/tag/v1.0.0"
-          }
+          },
+          "githubLink": "https://github.com/alexS317/comfort_zone_remake"
         },
         {
           "id": "dream-diary",
           "title": "Dream Diary [WIP]",
           "category": "personal",
+          "year": "2023",
           "media": ["dream-diary-1.webp"],
           "tools": ["Flutter", "Firebase"],
-          "description": "I started building this app originally because I wanted to learn lucid dreaming, but always struggled to remember my dreams. In Dream Diary, users should be able to track their dreams in a calendar, mark whether or not they had a lucid dream and write down details about what they remember from it. I also wanted to use it as an opportunity to learn how to implement user authentication and use Firebase as a back-end.<br><br>In its current state, the app is still very much a work in progress, and unfortunately I did not have the time to continue working on it for a longer while. I still hope that I will be able to do so though at some point, as I would want to be able to actually use it."
+          "description": "I started building this app originally because I wanted to learn lucid dreaming, but always struggled to remember my dreams. In Dream Diary, users should be able to track their dreams in a calendar, mark whether or not they had a lucid dream and write down details about what they remember from it. I also wanted to use it as an opportunity to learn how to implement user authentication and use Firebase as a back-end.<br><br>In its current state, the app is still very much a work in progress, and unfortunately I did not have the time to continue working on it for a longer while. I still hope that I will be able to do so though at some point, as I would want to be able to actually use it.",
+          "githubLink": "https://github.com/alexS317/dream_diary"
         },
         {
           "id": "music-player",
           "title": "Music Player [WIP]",
           "category": "personal",
+          "year": "2025",
           "media": ["music-player-1.webp"],
           "tools": ["Flutter"],
-          "description": "The main motivation to start this project was actually frustration. I was very annoyed that the default music player on my phone included ads, despite me just wanting to listen to music I had stored locally on my device. So I decided to just code my own music player app instead!<br><br>I threw this together in a very short span of just a few days as I wanted to be able to use it as soon as possible. Therefore I admit it is rather messy, the basic functions work, but there are some bugs and is definitely in need of a thorough refactoring when I have the time for it. Still, I think it helped me getting more familiar with Flutter, as I also used some packages and techniques that I did not know before yet."
+          "description": "The main motivation to start this project was actually frustration. I was very annoyed that the default music player on my phone included ads, despite me just wanting to listen to music I had stored locally on my device. So I decided to just code my own music player app instead!<br><br>I threw this together in a very short span of just a few days as I wanted to be able to use it as soon as possible. Therefore I admit it is rather messy, the basic functions work, but there are some bugs and is definitely in need of a thorough refactoring when I have the time for it. Still, I think it helped me getting more familiar with Flutter, as I also used some packages and techniques that I did not know before yet.",
+          "githubLink": "https://github.com/alexS317/music_player"
         },
         {
           "id": "cosmic-purrsuit",
@@ -182,6 +195,7 @@
           "category": "university",
           "studyProgramme": "Digital Media Production",
           "semester": "3",
+          "year": "2025/26",
           "media": [
             "cosmic-purrsuit-1.webp",
             "cosmic-purrsuit-2.webp",
@@ -196,7 +210,8 @@
             "Substance Painter",
             "Blender",
             "After Effects",
-            "Premiere Pro"
+            "Premiere Pro",
+            "Clip Studio Paint"
           ],
           "description": "For our masterclass project during this semester, I created an animated short film together with two other study colleagues. Together we decided on an idea – a chance meeting between a cat and a UFO – and developed it further through concept art and storyboarding. My primary focus was especially our main character, the cat. I created the concept art for it and later on was also responsible for the modelling, texturing, rigging, and parts of the animation. It was my first time creating and working with a quadruped character model, and I ran into several obstacles along the way. For instance, the first iteration of the face looked rather unsettling because the proportions were not right, and especially the rigging and weight-painting gave me a lot of headaches (we decided to use the pre-built cat rig from Blender due to time constraints, but adaptations were still necessary). Regardless I think it was a valuable learning experience.<br><br>Once we moved past those struggles, things got easier though, and especially once we reached the VFX and editing stage we could slowly see everything come together. There is of course always room for improvement, but we are very happy about what we achieved, especially in such a small team. The film also has a particularly special meaning to me, as the design of the cat was inspired by my own beloved cat Maxi, who sadly left this life far too early already, but I think I was able to create a small memorial for her in this way.<br><br>The film is currently not publicly available in full length yet, as we may still want to submit it to a few animation festivals and student contests first. Therefore, for now I only included a small video compilation of the scenes where I did the character animation and VFX."
         },
@@ -206,6 +221,7 @@
           "category": "university",
           "studyProgramme": "Digital Media Production",
           "semester": "3",
+          "year": "2025/26",
           "media": [
             "chibi-sushi-1.webp",
             "chibi-sushi-2.webp",
@@ -221,6 +237,7 @@
           "category": "university",
           "studyProgramme": "Creative Computing",
           "semester": "6",
+          "year": "2024",
           "media": [
             "swampify-1.webp",
             "swampify-2.webp",
@@ -234,7 +251,8 @@
           "link": {
             "text": "Here you can download it from itch.io and try it out for yourself!",
             "url": "https://shellrider.itch.io/swampify"
-          }
+          },
+          "githubLink": "https://github.com/shellrider-games/DGP-BCC21"
         },
         {
           "id": "tides-of-fortune",
@@ -242,6 +260,7 @@
           "category": "university",
           "studyProgramme": "Creative Computing",
           "semester": "4",
+          "year": "2023",
           "media": [
             "tides-of-fortune-1.webp",
             "tides-of-fortune-2.webp",
@@ -256,7 +275,8 @@
           "link": {
             "text": "You can download the executable (Windows only) from GitHub and try it for yourself!",
             "url": "https://github.com/alexS317/Tides-of-Fortune/releases/tag/v1.0.0"
-          }
+          },
+          "githubLink": "https://github.com/alexS317/Tides-of-Fortune"
         },
         {
           "id": "the-hunt-for-the-pirate-gold",
@@ -264,6 +284,7 @@
           "category": "university",
           "studyProgramme": "Creative Computing",
           "semester": "4",
+          "year": "2023",
           "media": [
             "the-hunt-for-the-pirate-gold-1.webp",
             "the-hunt-for-the-pirate-gold-2.webp",
@@ -276,7 +297,8 @@
           "link": {
             "text": "Here you can play a browser version of the game!",
             "url": "https://play.unity.com/en/games/bc3d84a7-e999-4cc6-9696-4c504d7aac91/the-hunt-for-the-pirate-gold"
-          }
+          },
+          "githubLink": "https://github.com/alexS317/The-Hunt-for-the-Pirate-Gold"
         },
         {
           "id": "space-workshop",
@@ -284,6 +306,7 @@
           "category": "university",
           "studyProgramme": "Creative Computing",
           "semester": "4",
+          "year": "2023",
           "media": [
             "space-workshop-1.webp",
             "space-workshop-2.webm",
@@ -294,7 +317,8 @@
           "link": {
             "text": "Here you can play a browser version of the game!",
             "url": "https://play.unity.com/en/games/5fff3ef5-a7bc-4711-b14c-ba3b2acef5a4/space-workshop"
-          }
+          },
+          "githubLink": "https://github.com/alexS317/Space-Workshop"
         },
         {
           "id": "pirates-memory",
@@ -302,13 +326,15 @@
           "category": "university",
           "studyProgramme": "Creative Computing",
           "semester": "3",
+          "year": "2022/23",
           "media": ["pirates-memory-1.webp"],
           "tools": ["Nuxt", "Pinia"],
           "description": "I created this pirate-themed memory game as the final project for my front-end development course, which taught the basic concepts of frameworks like Vue and Nuxt. The assignment was to create either a web-based game or a simple website. The game is currently not adapted for smaller mobile devices (I would recommend a screen at least the size of an iPad) though hopefully I can update it accordingly in the future if I find the time to do so.",
           "link": {
             "text": "Here you can give it a try!",
             "url": "https://pirates-memory.netlify.app/"
-          }
+          },
+          "githubLink": "https://github.com/alexS317/Pirates-Memory"
         },
         {
           "id": "artify",
@@ -316,6 +342,7 @@
           "category": "university",
           "studyProgramme": "Creative Computing",
           "semester": "2",
+          "year": "2022",
           "media": [
             "artify-1.webp",
             "artify-2.webp",
@@ -325,7 +352,8 @@
             "https://www.youtube.com/embed/sQ-vypEhS1I?si=1xL43_sxzIbev7lj"
           ],
           "tools": ["Express", "EJS", "MySQL"],
-          "description": "I created this website during my second Creative Code Lab (two week intensive project at the end of the semester), which focused on full-stack web development. The goal was to make a simple website (for example a webshop, a social media clone, etc.) where users could sign up, customise their profile, and perform other types of interactions. I created a small art sharing platform (inspired by DeviantArt) where people could upload their drawings. I used the Express framework and a MySQL database to store the user data. The design was also made by myself and for the example images which I used for testing, I simply used various pieces of my own fan art drawings that I had done in the recent months.<br><br>Unfortunately, the database and hosting that was provided for the project by the university is not available anymore, which is why it is currently not accessible online. I have included a video though which I recorded as part of the assignment, where I show the most important parts of the application."
+          "description": "I created this website during my second Creative Code Lab (two week intensive project at the end of the semester), which focused on full-stack web development. The goal was to make a simple website (for example a webshop, a social media clone, etc.) where users could sign up, customise their profile, and perform other types of interactions. I created a small art sharing platform (inspired by DeviantArt) where people could upload their drawings. I used the Express framework and a MySQL database to store the user data. The design was also made by myself and for the example images which I used for testing, I simply used various pieces of my own fan art drawings that I had done in the recent months.<br><br>Unfortunately, the database and hosting that was provided for the project by the university is not available anymore, which is why it is currently not accessible online. I have included a video though which I recorded as part of the assignment, where I show the most important parts of the application.",
+          "githubLink": "https://github.com/alexS317/Artify"
         }
       ]
     }

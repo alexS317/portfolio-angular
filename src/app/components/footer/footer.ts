@@ -13,5 +13,5 @@ import { buildInfo } from '../../../environments/build-info';
 export class Footer {
   private translateService = inject(TranslateService);
   protected readonly email = toSignal<string>(this.translateService.stream('app.home.links.email'));
-  protected readonly lastUpdated = signal<string>(buildInfo.lastUpdated);
+  protected readonly lastUpdated = signal<string>(buildInfo.lastUpdated ?? new Date().toString());
 }

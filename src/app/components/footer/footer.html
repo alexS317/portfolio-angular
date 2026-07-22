@@ -4,7 +4,16 @@
     <p class="font-bold">Email:&nbsp;</p>
     <a class="underline" [href]="'mailto:' + email()"> {{ email() }} </a>
   </div>
-  <p>{{ 'app.footer.builtWith' | translate }}{{ lastUpdated() | date: 'longDate' }}</p>
+  <span>
+    <span>{{ 'app.footer.builtWith' | translate }}{{ lastUpdated() | date: 'longDate' }}. </span>
+    <a
+      [href]="'app.footer.githubLink' | translate"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="underline"
+      >GitHub Repo</a
+    >
+  </span>
   <p [innerHTML]="'app.footer.credits' | translate"></p>
   <p>{{ 'app.footer.aiConsent' | translate }}</p>
 </footer>
