@@ -270,7 +270,7 @@
             "tides-of-fortune-6.webp",
             "https://www.youtube.com/embed/nueHHxwOPMI?si=QO4YsuQYFwxkuCv7"
           ],
-          "tools": ["Unity", "Blender", "Clip Studio Paint"],
+          "tools": ["Unity", "Blender", "Clip Studio Paint", "Wwise"],
           "description": "This 3D adventure game was done for our fourth Creative Code Lab (two week intensive course at the end of the semester) and was done as a group project with three of my study colleagues. I was responsible for creating the main character with all of their features (concept, modelling, texturing, rigging, animating), as well as some other graphical assets, both 2D and 3D, like the treasure chest or the inventory UI. I also implemented some features in the code, like the item collection. The project was intense, but also very fun to work on, and even though none of us in the team had worked with Unity prior to the semester, we were very happy with what we could achieve in this short amount of time.",
           "link": {
             "text": "You can download the executable (Windows only) from GitHub and try it for yourself!",
@@ -329,7 +329,7 @@
           "year": "2022/23",
           "media": ["pirates-memory-1.webp"],
           "tools": ["Nuxt", "Pinia"],
-          "description": "I created this pirate-themed memory game as the final project for my front-end development course, which taught the basic concepts of frameworks like Vue and Nuxt. The assignment was to create either a web-based game or a simple website. The game is currently not adapted for smaller mobile devices (I would recommend a screen at least the size of an iPad) though hopefully I can update it accordingly in the future if I find the time to do so.",
+          "description": "I created this pirate-themed memory game as the final project for my front-end development course, which taught the basic concepts of frameworks like Vue and Nuxt. The assignment was to create either a web-based game or a simple website, and I decided to theme it after one of my favourite movie series.",
           "link": {
             "text": "Here you can give it a try!",
             "url": "https://pirates-memory.netlify.app/"
@@ -351,8 +351,8 @@
             "artify-5.webp",
             "https://www.youtube.com/embed/sQ-vypEhS1I?si=1xL43_sxzIbev7lj"
           ],
-          "tools": ["Express", "EJS", "MySQL"],
-          "description": "I created this website during my second Creative Code Lab (two week intensive project at the end of the semester), which focused on full-stack web development. The goal was to make a simple website (for example a webshop, a social media clone, etc.) where users could sign up, customise their profile, and perform other types of interactions. I created a small art sharing platform (inspired by DeviantArt) where people could upload their drawings. I used the Express framework and a MySQL database to store the user data. The design was also made by myself and for the example images which I used for testing, I simply used various pieces of my own fan art drawings that I had done in the recent months.<br><br>Unfortunately, the database and hosting that was provided for the project by the university is not available anymore, which is why it is currently not accessible online. I have included a video though which I recorded as part of the assignment, where I show the most important parts of the application.",
+          "tools": ["Node.js", "Express", "EJS", "CSS", "MySQL"],
+          "description": "I created this website during my second Creative Code Lab (two week intensive project at the end of the semester), which focused on full-stack web development. The goal was to make a simple website (for example a webshop, a social media clone, etc.) where users could sign up, customise their profile, and perform other types of interactions. I created a small art sharing platform (inspired by DeviantArt) where people could upload their drawings. I used the Express framework and a MySQL database to store the user data. The design was also made by myself and for the example images which I used for testing, I simply used various pieces of my own fan art drawings that I had done in the recent months.<br><br>Unfortunately, the database and hosting that was provided for the project by the university is not available anymore, which is why it is currently not accessible online. If you clone the repository and follow the instructions in the README file, you can test it locally though and it should work just fine there. I have also included a video which I recorded as part of the assignment, where I show the most important parts of the application.",
           "githubLink": "https://github.com/alexS317/Artify"
         }
       ]
