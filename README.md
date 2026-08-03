@@ -87,7 +87,7 @@ Make sure you have the following installed:
    ```sh
    npm run start
    ```
-4. Open your browser at [http://localhost:3000/](http://localhost:4200/)
+4. Open your browser at [http://localhost:4200/](http://localhost:4200/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
