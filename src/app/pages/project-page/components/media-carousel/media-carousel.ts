@@ -25,9 +25,9 @@ export class MediaCarousel implements AfterViewInit, OnDestroy {
   public readonly mediaItems = input.required<string[]>();
   protected readonly currentItemId = signal<number>(0);
   protected readonly path = computed<string>(() => 'images/projects/' + this.projectId() + '/');
-  protected readonly youtubePreviewArray = computed<{ isVideo: boolean; videoId: string }[]>(() =>
-    this.mediaItems().map(item => this.handleYoutubeVideoPreview(item)),
-  );
+  protected readonly youtubeData = computed<
+    { isVideo: boolean; thumbnail: string | null; safeUrl: SafeResourceUrl | null }[]
+  >(() => this.mediaItems().map(item => this.handleYoutubeData(item)));
   protected readonly carouselContainer = viewChild<ElementRef<HTMLDivElement>>('carouselContainer');
   protected readonly carousel = viewChild<ElementRef<HTMLDivElement>>('carousel');
   protected readonly containerWidth = signal<number>(0);
@@ -68,20 +68,21 @@ export class MediaCarousel implements AfterViewInit, OnDestroy {
     this.overlayActive.set(false);
   }
 
-  protected sanitizeYoutubeUrl(url: string): SafeResourceUrl {
-    return this.domSantizer.bypassSecurityTrustResourceUrl(url);
-  }
-
-  private handleYoutubeVideoPreview(url: string): { isVideo: boolean; videoId: string } {
+  private handleYoutubeData(url: string): {
+    isVideo: boolean;
+    thumbnail: string | null;
+    safeUrl: SafeResourceUrl | null;
+  } {
     const youtubeUrlMatch = url.match(this.YOUTUBE_URL_REGEX);
 
     if (youtubeUrlMatch && youtubeUrlMatch[1]) {
       return {
         isVideo: true,
-        videoId: `https://i.ytimg.com/vi/${youtubeUrlMatch[1]}/maxresdefault.jpg`,
+        thumbnail: `https://i.ytimg.com/vi/${youtubeUrlMatch[1]}/maxresdefault.jpg`,
+        safeUrl: this.domSantizer.bypassSecurityTrustResourceUrl(url),
       };
     } else {
-      return { isVideo: false, videoId: '' };
+      return { isVideo: false, thumbnail: null, safeUrl: null };
     }
   }
 

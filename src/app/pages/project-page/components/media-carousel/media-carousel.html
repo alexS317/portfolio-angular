@@ -1,4 +1,4 @@
-@let youtubeVideos = youtubePreviewArray();
+@let youtubeVideos = youtubeData();
 
 <div class="flex flex-col gap-3">
   <div class="aspect-video overflow-hidden" #carouselContainer>
@@ -11,7 +11,7 @@
               class="aspect-video max-w-full"
               [width]="containerWidth()"
               height=""
-              [src]="sanitizeYoutubeUrl(item)"
+              [src]="youtubeVideos[$index].safeUrl"
               title="YouTube video player"
               frameborder="0"
               allow="
@@ -65,7 +65,7 @@
         tabindex="0"
       >
         @if (youtubeVideos[$index].isVideo) {
-          <img class="aspect-video object-contain" [src]="youtubeVideos[$index].videoId" alt="" />
+          <img class="aspect-video object-contain" [src]="youtubeVideos[$index].thumbnail" alt="" />
           <i class="pi pi-play absolute z-10 text-5xl"></i>
         } @else if (item.includes('.webm')) {
           <video
