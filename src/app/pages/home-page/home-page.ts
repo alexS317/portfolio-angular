@@ -29,10 +29,13 @@ export class HomePage {
   private readonly scrollHelperService = inject(ScrollHelperService);
 
   protected readonly categoryHeadings = viewChildren<ElementRef<HTMLHeadingElement>>('category');
+  protected readonly projects = computed(() => this.projectsService.getAllProjects());
   protected readonly universityProjects = computed(() =>
-    this.projectsService.getUniversityProjects(),
+    this.projects().filter(p => p.category === 'university'),
   );
-  protected readonly personalProjects = computed(() => this.projectsService.getPersonalProjects());
+  protected readonly personalProjects = computed(() =>
+    this.projects().filter(p => p.category === 'personal'),
+  );
   protected readonly jobs = toSignal<Experience[]>(
     this.translateService.stream('app.home.jobsList'),
   );

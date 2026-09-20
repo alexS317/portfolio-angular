@@ -1,7 +1,8 @@
 const fs = require('fs');
 
-const buildDate = new Date().toISOString();
+const file = fs.readFileSync('./src/environments/environment.production.ts', 'utf8');
 
-const content = `export const buildInfo = { lastUpdated: '${buildDate}' };`;
+const lastUpdated = new Date().toISOString();
+const content = file.replace('{{LAST_UPDATED}}', lastUpdated);
 
-fs.writeFileSync('./src/environments/build-info.ts', content);
+fs.writeFileSync('./src/environments/environment.production.ts', content);

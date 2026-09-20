@@ -14,14 +14,6 @@ export class ProjectsService {
     return this.projects() ?? [];
   }
 
-  public getUniversityProjects(): Project[] {
-    return this.projects()?.filter(p => p.category === 'university') ?? [];
-  }
-
-  public getPersonalProjects(): Project[] {
-    return this.projects()?.filter(p => p.category === 'personal') ?? [];
-  }
-
   public getProject(id: string): Project | undefined {
     return this.projects()?.find(p => p.id === id);
   }
