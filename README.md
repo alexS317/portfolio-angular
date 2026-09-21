@@ -49,7 +49,7 @@
 
 ![Portfolio Website][product-screenshot-1]
 
-I built myself an online portfolio to showcase projects I created for university courses or in my free time, in order to show potential employers what I am capable of doing and also to track my own progress. Additionally, I used the project itself as an opportunity to practice my Angular skills.
+I built myself an online portfolio to showcase projects I created for university courses or in my free time, in order to show potential employers what I am capable of doing and also to track my own progress. Additionally, I used the project itself as an opportunity to practice my Angular skills, and even set up a small CMS.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -57,6 +57,7 @@ I built myself an online portfolio to showcase projects I created for university
 
 - [![Angular][Angular.dev]][Angular-url]
 - [![Tailwind CSS][TailwindCSS.com]][TailwindCSS-url]
+- [![Decap CMS][decapcms.org]][decapcms-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -95,7 +96,7 @@ Make sure you have the following installed:
 
 ## Usage
 
-The text content data is loaded from a json file (which is loaded through the  ngx-translate service), and can be easily modified there without touching any of the component files themselves. For example, new work experiences, skills or even entire projects can be added in a quick and simple way. Projects can have a variety of properties, such as tools used, year, links to the live view and/or GitHub repo, multiple images or videos, etc.
+The projects shown on the site are managed through Decap CMS, which makes it possible to handle them in a quick and user-friendly way via the CMS interface in the browser. Project properties and media files can therefore be added and edited without having to touch any of the code. Other website contents that may not be edited as frequently are stored directly in a JSON file, which is loaded through ngx-translate and can be adapted easily to include multiple language variants later on.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -109,7 +110,8 @@ The text content data is loaded from a json file (which is loaded through the  n
   - [x] Add project preview cards
 - [x] Add project page
   - [x] Add image carousel with custom scrolling
-- [x] Integrate Decap CMS for easier project content editing
+- [x] Integrate Decap CMS for easier project content management
+- [x] Switch to Static Site Generation
 - [ ] Add German translation (optional)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -133,3 +135,5 @@ The text content data is loaded from a json file (which is loaded through the  n
 [Angular-url]: https://angular.dev/
 [TailwindCSS.com]: https://img.shields.io/badge/Tailwind%20CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white
 [TailwindCSS-url]: https://tailwindcss.com/
+[decapcms.org]: https://img.shields.io/badge/Decap%20CMS-FF0082?style=for-the-badge&logo=decapcms&logoColor=white
+[decapcms-url]: https://decapcms.org/

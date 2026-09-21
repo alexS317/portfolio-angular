@@ -7,8 +7,8 @@ import {
   input,
   signal,
   viewChild,
-  AfterViewInit,
   OnDestroy,
+  afterNextRender,
 } from '@angular/core';
 import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 
@@ -17,7 +17,7 @@ import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
   imports: [NgOptimizedImage],
   templateUrl: './media-carousel.html',
 })
-export class MediaCarousel implements AfterViewInit, OnDestroy {
+export class MediaCarousel implements OnDestroy {
   private readonly YOUTUBE_URL_REGEX = /(?:youtube\.com\/watch\?v=|youtube\.com\/embed\/)([^&?#]+)/;
   private readonly SCROLL_INTERVAL_MS = 3000;
   private readonly domSantizer = inject(DomSanitizer);
@@ -32,25 +32,27 @@ export class MediaCarousel implements AfterViewInit, OnDestroy {
   protected readonly carousel = viewChild<ElementRef<HTMLDivElement>>('carousel');
   protected readonly containerWidth = signal<number>(0);
   protected readonly overlayActive = signal<boolean>(true);
-  private resizeObserver!: ResizeObserver;
-  private scrollIntervalId!: number;
+  private resizeObserver?: ResizeObserver;
+  private scrollIntervalId?: ReturnType<typeof setInterval>;
 
-  ngAfterViewInit() {
-    if (this.carouselContainer()) {
-      this.resizeObserver = new ResizeObserver(entries => {
-        entries.forEach(e => this.containerWidth.set(e.contentRect.width));
-      });
-      this.resizeObserver.observe(this.carouselContainer()!.nativeElement);
+  constructor() {
+    afterNextRender(() => {
+      if (this.carouselContainer()) {
+        this.resizeObserver = new ResizeObserver(entries => {
+          entries.forEach(e => this.containerWidth.set(e.contentRect.width));
+        });
+        this.resizeObserver.observe(this.carouselContainer()!.nativeElement);
 
-      this.scrollIntervalId = setInterval(() => {
-        this.currentItemId.update(i => (i + 1) % this.mediaItems().length);
-        this.scrollThroughItems(this.currentItemId());
-      }, this.SCROLL_INTERVAL_MS);
-    }
+        this.scrollIntervalId = setInterval(() => {
+          this.currentItemId.update(i => (i + 1) % this.mediaItems().length);
+          this.scrollThroughItems(this.currentItemId());
+        }, this.SCROLL_INTERVAL_MS);
+      }
+    });
   }
 
   ngOnDestroy(): void {
-    this.resizeObserver.disconnect();
+    this.resizeObserver?.disconnect();
     if (this.scrollIntervalId) {
       clearInterval(this.scrollIntervalId);
     }

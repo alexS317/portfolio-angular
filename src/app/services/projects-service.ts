@@ -14,8 +14,10 @@ export class ProjectsService {
   private http = inject(HttpClient);
   private translateService = inject(TranslateService);
 
-  public getAllProjects(): Observable<Project[]> {
-    const lang = this.translateService.getCurrentLang();
+  public getAllProjects(lang?: string): Observable<Project[]> {
+    if (!lang) {
+      lang = this.translateService.getCurrentLang();
+    }
 
     return this.http.get<string[]>('/content/projects/index.json').pipe(
       map(projects => projects.filter(p => p.includes(`.${lang}.`))),

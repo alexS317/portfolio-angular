@@ -1,4 +1,4 @@
-import { Component, computed, signal, OnInit, OnDestroy } from '@angular/core';
+import { Component, computed, signal, OnDestroy, afterNextRender } from '@angular/core';
 
 @Component({
   selector: 'app-cursor-effect',
@@ -6,7 +6,7 @@ import { Component, computed, signal, OnInit, OnDestroy } from '@angular/core';
   templateUrl: './cursor-effect.html',
   host: { '(window:mousemove)': 'onMouseMove($event)' },
 })
-export class CursorEffect implements OnInit, OnDestroy {
+export class CursorEffect implements OnDestroy {
   private readonly mouseX = signal<number>(0);
   private readonly mouseY = signal<number>(0);
   protected readonly transformPosition = computed<string>(
@@ -24,9 +24,11 @@ export class CursorEffect implements OnInit, OnDestroy {
   private lastTime = 0;
   private animId: number | null = null;
 
-  ngOnInit(): void {
-    this.lastTime = performance.now();
-    this.animate(this.lastTime);
+  constructor() {
+    afterNextRender(() => {
+      this.lastTime = performance.now();
+      this.animate(this.lastTime);
+    });
   }
 
   ngOnDestroy(): void {
