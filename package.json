@@ -4,12 +4,14 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "prebuild": "node src/scripts/update-build-info.js",
+    "prebuild": "npm run generate-projects-index && npm run update-build-info",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "lint": "ng lint",
-    "prepare": "husky"
+    "prepare": "husky",
+    "generate-projects-index": "node src/scripts/generate-projects-index.js",
+    "update-build-info": "node src/scripts/update-build-info.js"
   },
   "private": true,
   "packageManager": "npm@11.12.1",
@@ -36,6 +38,7 @@
     "eslint": "^10.0.3",
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-prettier": "^5.5.5",
+    "front-matter": "^4.0.2",
     "husky": "^9.1.7",
     "jsdom": "^28.0.0",
     "postcss": "^8.5.3",

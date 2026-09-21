@@ -11,31 +11,31 @@
     <div class="flex flex-col gap-6 lg:flex-row">
       <app-media-carousel
         class="lg:max-w-[55%]"
-        [projectId]="project()?.id ?? ''"
-        [mediaItems]="project()?.media ?? []"
+        [projectId]="project()!.id"
+        [mediaItems]="project()!.media"
       ></app-media-carousel>
 
       <section class="flex flex-col gap-6">
         <div class="flex flex-col gap-2">
-          <h1 class="text-teal-400">{{ project()?.title }}</h1>
+          <h1 class="text-teal-400">{{ project()!.title }}</h1>
           <h4>
             @if (semester()) {
-              <span>{{ project()?.studyProgramme }} | {{ semester() }} Semester | </span>
+              <span>{{ project()!.studyProgramme }} | {{ semester() }} Semester | </span>
             }
-            <span>{{ project()?.year }}</span>
+            <span>{{ project()!.year }}</span>
           </h4>
         </div>
 
         <div class="flex flex-row flex-wrap gap-3">
-          @for (tool of project()?.tools; track $index) {
+          @for (tool of project()!.tools; track $index) {
             <app-tool-tag [tool]="tool"></app-tool-tag>
           }
         </div>
 
-        @if (project()?.githubLink) {
+        @if (project()!.githubLink) {
           <a
             class="font-semibold text-teal-200"
-            [href]="project()?.githubLink"
+            [href]="project()!.githubLink"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -46,15 +46,15 @@
           </a>
         }
 
-        <p [innerHTML]="project()?.description"></p>
+        <p [innerHTML]="project()!.description"></p>
 
         <a
           class="font-semibold text-teal-200"
-          [href]="project()?.link?.url"
+          [href]="project()!.link?.url"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <span class="animate-underline">{{ project()?.link?.text }}</span></a
+          <span class="animate-underline">{{ project()!.link?.text }}</span></a
         >
       </section>
     </div>

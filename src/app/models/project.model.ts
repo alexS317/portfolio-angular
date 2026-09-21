@@ -3,7 +3,7 @@ export interface Project {
   title: string;
   category: 'university' | 'personal';
   studyProgramme?: string;
-  semester?: string;
+  semester?: number;
   year?: string;
   media: string[];
   tools: string[];

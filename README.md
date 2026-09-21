@@ -109,6 +109,8 @@ The text content data is loaded from a json file (which is loaded through the  n
   - [x] Add project preview cards
 - [x] Add project page
   - [x] Add image carousel with custom scrolling
+- [x] Integrate Decap CMS for easier project content editing
+- [ ] Add German translation (optional)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

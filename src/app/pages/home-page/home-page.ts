@@ -29,7 +29,9 @@ export class HomePage {
   private readonly scrollHelperService = inject(ScrollHelperService);
 
   protected readonly categoryHeadings = viewChildren<ElementRef<HTMLHeadingElement>>('category');
-  protected readonly projects = computed(() => this.projectsService.getAllProjects());
+  protected readonly projects = toSignal(this.projectsService.getAllProjects(), {
+    initialValue: [],
+  });
   protected readonly universityProjects = computed(() =>
     this.projects().filter(p => p.category === 'university'),
   );

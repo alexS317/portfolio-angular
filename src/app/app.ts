@@ -13,7 +13,7 @@ export class App {
   private translate = inject(TranslateService);
 
   constructor() {
-    this.translate.addLangs(['en']);
+    this.translate.addLangs(['en', 'de']);
     this.translate.setFallbackLang('en');
     this.translate.use('en');
   }

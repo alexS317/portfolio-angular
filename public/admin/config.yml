@@ -1,0 +1,148 @@
+local_backend: true
+
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: 'public/images/projects'
+public_folder: '/images/projects'
+
+i18n:
+  structure: multiple_files
+  locales: [en, de]
+
+collections:
+  - name: projects
+    label: Projects
+    label_singular: Project
+    folder: 'public/content/projects'
+    identifier_field: id
+    slug: '{{id}}'
+    summary: '{{title}}'
+    create: true
+    i18n: true
+
+    view_groups:
+      - label: Categories
+        field: category
+
+    fields:
+      - name: id
+        label: ID
+        widget: string
+        i18n: duplicate
+
+      - name: title
+        label: Title
+        widget: string
+        required: false
+        i18n: duplicate
+
+      - name: category
+        label: Category
+        widget: select
+        options:
+          - label: University
+            value: university
+          - label: Personal
+            value: personal
+        i18n: duplicate
+
+      - name: studyProgramme
+        label: Study Programme
+        widget: select
+        options: ['Creative Computing', 'Digital Media Production']
+        required: false
+        i18n: duplicate
+
+      - name: semester
+        label: Semester
+        widget: number
+        min: 1
+        max: 6
+        required: false
+        i18n: duplicate
+
+      - name: year
+        label: Year
+        widget: string
+        required: false
+        i18n: duplicate
+
+      - name: media
+        label: Media
+        widget: list
+        field:
+          name: mediafile
+          label: Media File or Link
+          widget: file
+          media_folder: '/{{media_folder}}/{{slug}}'
+          public_folder: ''
+          required: false
+          i18n: duplicate
+        required: false
+        collapsed: false
+        i18n: true
+
+      - name: tools
+        label: Tools
+        label_singular: Tool
+        widget: list
+        field:
+          name: tool
+          label: Tool
+          widget: string
+          i18n: duplicate
+        collapsed: false
+        required: false
+        i18n: true
+
+      - label: Description
+        name: body
+        widget: richtext
+        editor_components: []
+        required: false
+        i18n: true
+
+      - name: link
+        label: Link
+        widget: object
+        fields:
+          - name: text
+            label: Text
+            widget: string
+            required: false
+            i18n: true
+          - name: url
+            label: URL
+            widget: string
+            required: false
+            i18n: duplicate
+        required: false
+        i18n: true
+
+      - name: githubLink
+        label: GitHub Link
+        widget: string
+        required: false
+        i18n: duplicate
+
+  - name: settings
+    label: Settings
+    files:
+      - name: projectOrder
+        label: Project Order
+        file: public/content/projects/order.json
+        fields:
+          - name: order
+            label: Order
+            widget: list
+            collapsed: false
+            field:
+              name: project
+              label: Project
+              widget: relation
+              collection: projects
+              value_field: '{{slug}}'
+              search_fields: ['title']
+              display_fields: ['title']
