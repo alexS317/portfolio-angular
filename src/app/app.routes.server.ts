@@ -5,6 +5,10 @@ import { ProjectsService } from './services/projects-service';
 
 export const serverRoutes: ServerRoute[] = [
   {
+    path: 'projects/:projectCategory',
+    renderMode: RenderMode.Client,
+  },
+  {
     path: 'projects/:projectCategory/:projectId',
     renderMode: RenderMode.Prerender,
 
