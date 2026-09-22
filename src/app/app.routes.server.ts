@@ -1,16 +1,13 @@
 import { inject } from '@angular/core';
-import { RenderMode, ServerRoute } from '@angular/ssr';
+import { PrerenderFallback, RenderMode, ServerRoute } from '@angular/ssr';
 import { firstValueFrom } from 'rxjs';
 import { ProjectsService } from './services/projects-service';
 
 export const serverRoutes: ServerRoute[] = [
   {
-    path: 'projects/:projectCategory',
-    renderMode: RenderMode.Client,
-  },
-  {
     path: 'projects/:projectCategory/:projectId',
     renderMode: RenderMode.Prerender,
+    fallback: PrerenderFallback.Client,
 
     async getPrerenderParams() {
       const projectsService = inject(ProjectsService);
@@ -25,6 +22,6 @@ export const serverRoutes: ServerRoute[] = [
   },
   {
     path: '**',
-    renderMode: RenderMode.Prerender,
+    renderMode: RenderMode.Client,
   },
 ];

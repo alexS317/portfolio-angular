@@ -1,5 +1,4 @@
 import { afterNextRender, Component, computed, inject } from '@angular/core';
-import { Project } from '../../models/project.model';
 import { ToolTag } from './components/tool-tag/tool-tag';
 import { ActivatedRoute, RouterLink } from '@angular/router';
 import { map, switchMap } from 'rxjs';
@@ -20,7 +19,7 @@ export class ProjectPage {
 
   protected readonly currentLang = this.translateService.getCurrentLang();
 
-  protected readonly project = toSignal<Project | null>(
+  protected readonly project = toSignal(
     this.route.paramMap.pipe(
       map(params => ({
         id: params.get('projectId'),

@@ -5,7 +5,9 @@
     ></i>
     <p class="text-xl">{{ 'app.project.backButton' | translate }}</p>
   </a>
-  @if (!project()) {
+
+  @if (project() === undefined) {
+  } @else if (project() === null) {
     <p class="text-center">{{ 'app.project.noProjectFound' | translate }}</p>
   } @else {
     <div class="flex flex-col gap-6 lg:flex-row">

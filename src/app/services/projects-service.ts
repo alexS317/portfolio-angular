@@ -31,13 +31,19 @@ export class ProjectsService {
   public getProject(filename: string): Observable<Project | null> {
     return this.http.get(`/content/projects/${filename}`, { responseType: 'text' }).pipe(
       map(content => {
+        if (content.trimStart().toLowerCase().startsWith('<!doctype html')) {
+          throw new Error(`Project ${filename} not found`);
+        }
         const parsed = frontmatter<ProjectFrontMatter>(content);
         return {
           ...parsed.attributes,
           description: parsed.body,
         };
       }),
-      catchError(() => of(null)),
+      catchError(err => {
+        console.error(err);
+        return of(null);
+      }),
     );
   }
 }
