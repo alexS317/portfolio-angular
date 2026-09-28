@@ -3,7 +3,6 @@ id: music-player
 title: Music Player [WIP]
 category: personal
 year: "2025"
-manualIndex: 0
 media:
   - music-player-1.webp
 tools:

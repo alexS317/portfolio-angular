@@ -5,7 +5,6 @@ category: university
 studyProgramme: Digital Media Production
 semester: 3
 year: 2025/26
-manualIndex: 6
 media:
   - chibi-sushi-1.webp
   - chibi-sushi-2.webp

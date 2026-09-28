@@ -3,7 +3,6 @@ id: comfort-zone-remake
 title: ComfortZone [Remake]
 category: personal
 year: 2023/24
-manualIndex: 2
 media:
   - comfort-zone-remake-1.webp
 tools:

@@ -5,7 +5,6 @@ category: university
 studyProgramme: Digital Media Production
 semester: 3
 year: 2025/26
-manualIndex: 7
 media:
   - cosmic-purrsuit-1.webp
   - cosmic-purrsuit-2.webp

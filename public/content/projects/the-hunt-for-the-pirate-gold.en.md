@@ -5,7 +5,6 @@ category: university
 studyProgramme: Creative Computing
 semester: 4
 year: "2023"
-manualIndex: 3
 media:
   - the-hunt-for-the-pirate-gold-1.webp
   - the-hunt-for-the-pirate-gold-2.webp

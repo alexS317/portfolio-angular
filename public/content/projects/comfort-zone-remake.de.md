@@ -5,7 +5,6 @@ category: personal
 studyProgramme: null
 semester: null
 year: 2023/24
-manualIndex: 2
 media:
   - comfort-zone-remake-1.webp
 tools:

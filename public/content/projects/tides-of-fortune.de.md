@@ -5,7 +5,6 @@ category: university
 studyProgramme: Creative Computing
 semester: 4
 year: "2023"
-manualIndex: 4
 media:
   - tides-of-fortune-1.webp
   - tides-of-fortune-2.webp

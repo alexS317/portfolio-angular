@@ -5,7 +5,6 @@ category: university
 studyProgramme: Creative Computing
 semester: 2
 year: "2022"
-manualIndex: 0
 media:
   - artify-1.webp
   - artify-2.webp

@@ -3,7 +3,6 @@ id: dream-diary
 title: Dream Diary [WIP]
 category: personal
 year: "2023"
-manualIndex: 1
 media:
   - dream-diary-1.webp
 tools:

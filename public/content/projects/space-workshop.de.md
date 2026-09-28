@@ -5,7 +5,6 @@ category: university
 studyProgramme: Creative Computing
 semester: 4
 year: "2023"
-manualIndex: 2
 media:
   - space-workshop-1.webp
   - space-workshop-2.webm

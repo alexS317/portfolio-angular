@@ -12,7 +12,7 @@
   } @else {
     <div class="flex flex-col gap-6 lg:flex-row">
       <app-media-carousel
-        class="lg:max-w-[55%]"
+        class="shrink-0 lg:w-[55%]"
         [projectId]="project()!.id"
         [mediaItems]="project()!.media"
       ></app-media-carousel>
