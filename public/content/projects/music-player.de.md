@@ -1,6 +1,6 @@
 ---
 id: music-player
-title: Music Player [WIP]
+title: Music Player
 category: personal
 studyProgramme: null
 semester: null

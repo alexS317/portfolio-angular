@@ -7,4 +7,5 @@ import { Component, input } from '@angular/core';
 })
 export class ToolTag {
   public tool = input.required<string>();
+  public size = input<'default' | 'small'>('default');
 }

@@ -129,7 +129,7 @@
           "section": [
             {
               "subtitle": "Actively learning at the moment",
-              "list": ["Vue.js/Nuxt", "Laravel", "Docker"]
+              "list": ["Vue.js/Nuxt", "Laravel", "Docker", "Java/Spring"]
             },
             {
               "subtitle": "Other things I would like to try out",
@@ -137,7 +137,6 @@
                 "Unreal Engine & C++",
                 "ZBrush",
                 "Python",
-                "Java",
                 "And of course also deepening my knowledge in the things that I am already familiar with :)"
               ]
             }

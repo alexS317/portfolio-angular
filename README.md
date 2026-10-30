@@ -71,7 +71,7 @@ Here you find the instructions on how to set up the project locally.
 
 Make sure you have the following installed:
 
-- [node.js](https://nodejs.org/en/download) (v20 or later, LTS is recommended)
+- [node.js](https://nodejs.org/en/download) (v22 or later, LTS is recommended)
 
 ### Installation
 

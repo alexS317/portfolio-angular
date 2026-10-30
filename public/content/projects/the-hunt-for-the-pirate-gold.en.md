@@ -21,4 +21,6 @@ githubLink: https://github.com/alexS317/The-Hunt-for-the-Pirate-Gold
 ---
 I built this simple 3D game as the final assignment for my Unity class. The main task was to create a small playable game with at least two levels and showcase an implementation of basic concepts like character movement, interaction with items or random spawning of elements. I also took it as an opportunity to experiment with shaders for the first time in order to create the water. All 3D assets except for the ship were made by myself, the player character was simultaneously my final submission for a 3D modelling class, for the game I just had to rig and animate him.
 
+<br /><br />
+
 The video that I included is pretty long as I have to explain a lot (it was a mandatory part of the assignment), but you can also skip through it to see a bit of the gameplay.

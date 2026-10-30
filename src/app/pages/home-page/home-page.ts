@@ -4,6 +4,7 @@ import {
   computed,
   ElementRef,
   inject,
+  input,
   viewChildren,
 } from '@angular/core';
 import { ExperienceCard } from './components/experience-card/experience-card';
@@ -13,10 +14,10 @@ import { Experience } from '../../models/experience.model';
 import { SkillList } from '../../models/skill-list.model';
 import { SkillSection } from './components/skill-section/skill-section';
 import { IconLink } from './components/icon-link/icon-link';
-import { ProjectsService } from '../../services/projects-service';
 import { ProjectCard } from './components/project-card/project-card';
 import { ScrollHelperService } from '../../services/scroll-helper-service';
 import { NgOptimizedImage } from '@angular/common';
+import { Project } from '../../models/project.model';
 
 @Component({
   selector: 'app-home-page',
@@ -25,19 +26,17 @@ import { NgOptimizedImage } from '@angular/common';
 })
 export class HomePage {
   private readonly translateService = inject(TranslateService);
-  private readonly projectsService = inject(ProjectsService);
   private readonly scrollHelperService = inject(ScrollHelperService);
-
   protected readonly categoryHeadings = viewChildren<ElementRef<HTMLHeadingElement>>('category');
-  protected readonly projects = toSignal(this.projectsService.getAllProjects(), {
-    initialValue: [],
-  });
+
+  protected readonly projects = input.required<Project[]>();
   protected readonly universityProjects = computed(() =>
     this.projects().filter(p => p.category === 'university'),
   );
   protected readonly personalProjects = computed(() =>
     this.projects().filter(p => p.category === 'personal'),
   );
+
   protected readonly jobs = toSignal<Experience[]>(
     this.translateService.stream('app.home.jobsList'),
   );

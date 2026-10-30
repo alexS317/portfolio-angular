@@ -1,11 +1,9 @@
-import { afterNextRender, Component, computed, inject } from '@angular/core';
+import { afterNextRender, Component, computed, inject, input } from '@angular/core';
 import { ToolTag } from './components/tool-tag/tool-tag';
-import { ActivatedRoute, RouterLink } from '@angular/router';
-import { map, switchMap } from 'rxjs';
-import { toSignal } from '@angular/core/rxjs-interop';
-import { ProjectsService } from '../../services/projects-service';
+import { RouterLink } from '@angular/router';
 import { TranslatePipe, TranslateService } from '@ngx-translate/core';
 import { MediaCarousel } from './components/media-carousel/media-carousel';
+import { Project } from '../../models/project.model';
 
 @Component({
   selector: 'app-project-page',
@@ -13,28 +11,15 @@ import { MediaCarousel } from './components/media-carousel/media-carousel';
   templateUrl: './project-page.html',
 })
 export class ProjectPage {
-  private route = inject(ActivatedRoute);
-  private translateService = inject(TranslateService);
-  private projectsService = inject(ProjectsService);
-
-  protected readonly currentLang = this.translateService.getCurrentLang();
-
-  protected readonly project = toSignal(
-    this.route.paramMap.pipe(
-      map(params => ({
-        id: params.get('projectId'),
-        lang: this.currentLang,
-      })),
-      switchMap(({ id, lang }) => this.projectsService.getProject(`${id}.${lang}.md`)),
-    ),
-  );
+  private readonly translateService = inject(TranslateService);
+  protected readonly project = input.required<Project>();
 
   protected readonly semester = computed<string>(() => {
     if (!this.project()?.semester) {
       return '';
     }
 
-    if (this.currentLang === 'en') {
+    if (this.translateService.getCurrentLang() === 'en') {
       switch (this.project()?.semester) {
         case 1:
           return '1st';
