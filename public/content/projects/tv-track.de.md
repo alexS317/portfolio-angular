@@ -14,5 +14,7 @@ tools:
   - Spring Boot
   - PostgreSQL
   - Figma
+link:
+  url: https://tv-track-frontend.netlify.app/
 githubLink: https://github.com/alexS317/tv-track-frontend
 ---
